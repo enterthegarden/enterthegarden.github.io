@@ -1,0 +1,161 @@
+body {
+  font-family: 'EB Garamond';
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+table {
+  /* border:1px solid black; */
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr, td {
+  /* border:1px solid black; */
+}
+
+#the {
+  font-size: 105%;
+  color: grey;
+}
+
+#garden {
+  font-size: 180%;
+}
+
+hr {
+  width: 700px;
+}
+
+.source {color:#bf9000;}
+.health {color:#ee1d24}
+.truth {color:#009000}
+.love {color:#000000;}
+.beauty {color:#900090}
+.peace {color:#0038b8}
+.diamond {font-size:80%; position:relative; top: -1px;}
+
+.rootdiamond {font-size:60%; position:relative; top: -2px;}
+
+.partlabel {
+  font-family: 'Courier New';
+  font-size: 90%;
+  color: grey;
+}
+
+.subpartlabel {
+  font-family: 'Courier New';
+  font-size: 80%;
+  color: grey;
+}
+
+#rootheader {
+  font-size: 250%;
+}
+
+.rootqualitybrackets {
+  font-size: 140%
+}
+
+.rootqualitybrackets2 {
+  font-size: 240%
+  visibility: hidden;
+}
+
+.rootquality {
+  font-size:140%;
+  color: grey;
+}
+
+.rootcode {
+  font-family: 'Courier New';
+  color: grey;
+  position: relative;
+  top:2px;
+}
+
+.subheader {
+  font-size: 150%;
+}
+
+#howto {
+  line-height: 1.8;
+}
+
+#howtoreason {
+  color: grey;
+}
+
+#primes {
+  font-size:150%;
+  line-height:2;
+}
+
+a {text-decoration: none;}
+a:visited {text-decoration: none; color:#0000BB;}
+
+.fix {
+  font-size: 140%;
+  visibility: hidden;
+}
+
+.definition {
+  font-size: 160%;
+}
+
+.topbanner {
+  position: relative;
+  left:-6px;
+}
+
+.bottombanner {
+  position: relative;
+  left:-10px;
+}
+
+.bottomdownload {
+  line-height: 0.1;
+  font-family: 'Courier New';
+  font-size: 75%;
+  font-weight: 540;
+  color: #666666;
+}
+
+.quality {
+  color: #666666;
+}
+
+.resource {
+  font-family: 'Courier New';
+  font-size: 80%;
+}
+
+.resourcetype {
+  font-family: 'Courier New';
+  font-size: 80%;
+  width: 10%;
+  text-align: right;
+  vertical-align: top;
+  position: relative;
+  top: 6px
+}
+
+.resourcelist {
+  width:90%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.bullet {
+  color: grey;
+  font-size: 80%;
+}
+
+.reason {
+  color: grey;
+}
+
+#glossary {
+  font-size: 120%;
+}
