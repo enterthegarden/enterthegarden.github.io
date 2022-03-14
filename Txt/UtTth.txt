@@ -1,0 +1,87 @@
+
+(( Utmost Truth ...
+
+Utmost Prime :
+
+   Loam :: Utmost Development
+   Code :: UtTth
+
+   Root :: Utmost Truth
+Quality :: utmostly truthful
+
+ Mantle :: Utmost Developer
+    Act :: utmost developing
+
+
+Outline
+
+ Truth regards the Mind reflecting the World.
+ Utmost Truth regards the Mind able to reflect the whole World.
+ This is the Loam of Mindbuilding (MdB).
+
+ With few resources, a relevant Loam is Linguistics (Lng).
+ With modern resources, a relevant technology is artificial intelligence.
+
+ Artificial intelligence has seen rapid advances recently.
+ If current progress rates continue, emergence of a superintelligence is possible.
+ Therefore, this technology must be engaged with wisely.
+
+
+Resources
+
+  Intermediary
+
+   (Linguistics)
+
+	Closed Book:
+		Andrew Radford, Martin Atkinson, David Britain, Harald Clahsen, Andrew Spencer (2009), Linguistics: An Introduction; Cambridge University Press.
+	
+	Open Book:
+		W. M. Baskervill, J. W. Sewell (1895), An English Grammar.
+	
+	Web Resources:
+		ioling.org
+
+   (Artificial Intelligence)
+
+	Closed Book:
+		Andriy Burkov (2020), Machine Learning Engineering; True Positive Inc.
+	
+	Open Book:
+		David L. Poole, Alan K. Mackworth (2017), Artificial Intelligence: Foundations of Computational Agents (2nd ed.); Cambridge University Press.
+	
+	Web Resources:
+		geeksforgeeks.org
+		tio.run/#
+		github.com
+		replit.com
+
+  Advanced
+
+   (Linguistics)
+
+	Closed Book:
+		Mark Aronoff, Janie Rees-Miller (eds.) (2017), The Handbook of Linguistics (2nd ed.); Wiley-Blackwell.
+	
+	Open Book:
+		Catherine Anderson (2018), Essentials of Linguistics; BCcampus.
+	
+	Web Resources:
+		ocw.mit.edu/courses/linguistics-and-philosophy/
+		glottolog.org
+		wals.info
+		linguistlist.org
+
+   (Artificial Intelligence)
+
+	Closed Book:
+		Stuart Russell, Peter Norvig (2020), Artificial Intelligence: A Modern Approach (4th ed.); Pearson.
+	
+	Open Book:
+		Ian Goodfellow, Yoshua Bengio, Aaron Courville (2017), Deep Learning; MIT.
+	
+	Web Resources:
+		ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-034-artificial-intelligence-fall-2010/
+		opencog.org/theory
+
+... Utmost Truth ))

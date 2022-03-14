@@ -1,0 +1,45 @@
+
+(( Health ...
+
+   Loam :: Sustenance
+   Code :: Hth
+
+   Root :: Health
+Quality :: healthy
+
+ Mantle :: Sustainer
+    Act :: sustaining
+
+To make Health better, sustain the Body.
+(As the Body’s Needs give the Instincts to Live.)
+
+
+Primes of Health
+
+ * Inmost Health (InHth)
+ * Foremost Health (FoHth)
+ * Utmost Health (UtHth)
+
+
+Practice
+
+The following are practical acts and habits to sustain the Health of the Body:
+
+Increase your Strength.
+	So, breathe deeply.
+	Clean thoroughly.
+	Drink water. Eat healthfully.
+	Exercise harder. Sleep restfully.
+Increase your Wealth.
+	So, straighten your posture. Dress yourself well.
+	Sort out your tools. Care for your home.
+	Explore the settlements of People.
+	And explore the environments of Nature.
+Increase your Security.
+	So, practice self-defence and practice protection of others.
+	Sharpen your senses. Coordinate your body.
+	Then welcome strangers and the adventures of travel.
+	Finally, have some Sun.
+
+
+... Health ))

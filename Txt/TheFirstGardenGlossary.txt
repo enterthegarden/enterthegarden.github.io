@@ -1,0 +1,554 @@
+
+(( ... The First Garden :: Glossary ... ))
+
+
+
+(( ...
+
+In Writings of the Garden, many words begin with a capital letter.
+These are (almost always) the Terms of the Garden.
+
+Sometimes there are good reasons to not begin them with a capital letter; for example, for the sake of Beauty.
+Sometimes there are good reasons to begin words that are not Terms with a capital letter; for example, 'You'.
+It is not too strict.
+
+Here, an Essence and an Explanation is provided for a selection of them.
+Not all Terms are included here and not all will be.
+Interpretation is invited.
+
+... ))
+
+
+
+(( ... Contents
+
+	Loam, Root, Mantle
+	Code, Quality, Act
+
+	Body, Mind, Heart, Soul, Spirit
+	Health, Truth, Love, Beauty, Peace
+
+	Success, Freedom, Power
+	Character, Courage, Patience
+
+	Evilness, Meagreness
+	Goodness, Greatness
+
+... Contents ))
+
+
+
+(( Loam ...
+
+Essence
+
+	~ An Area of Life ~
+
+
+Explanation
+
+	Loams are the areas of  Life (Lfe).
+	Life (Lfe), the largest Loam, is envisioned as a circle in the plane.
+
+	All Loams of  Life (Lfe)  have a place in the circle and a three-letter Code.
+	The Code is cited afterwards in between brackets.
+
+	In the First Garden, the Five Root Loams are very general:
+		
+		Sustenance (Hth)
+		Development (Tth)
+		Connection (Lve)
+		Enrichment (Bty)
+		Guidance (Pce)
+
+	Some Loams of later Gardens are mentioned in the Writings of the First Garden, such as Science (Sci).
+
+	In the later Gardens, the Loams are more specific and range widely from:
+		
+		Breathing (Bre)  to  Physics (Phy)  to  Law (Law)
+
+... Loam ))
+
+
+
+(( Root ...
+
+Essence
+
+	~ A Value of Life ~
+
+
+Explanation
+
+	Roots are the values of  Life (Lfe).
+	They are visualised as special points in the plane.
+
+	Every Loam is paired with a Root.
+	For example, paired with the Loam  'Connection (Lve)'  is the Root  'Love'.
+
+	Additionally, every Root is paired with a Quality.
+	For example, paired with the Root  'Love'  is the Quality  '(loving)'.
+
+	In the First Garden, here are the Five Roots paired with the Five Root Qualities and the Five Root Loams:
+
+		Health  (healthy)  ::  Sustenance (Hth)
+		Truth  (truthful)  ::  Development (Tth)
+		Love  (loving)  ::  Connection (Lve)
+		Beauty  (beautiful)  ::  Enrichment (Bty)
+		Peace  (peaceful)  ::  Guidance (Pce)
+
+	Some other Roots are implied in the Writings of the First Garden, such as 'Freedom' or 'Cleanliness'.
+
+	This is given greater clarity in the later Gardens.
+
+... Root ))
+
+
+
+(( Mantle ...
+
+Essence
+
+	~ A Role of Life ~
+
+
+Explanation
+
+	Mantles are the roles of Life (Lfe).
+	They are visualised as a passage in the plane from a Loam to its Roots.
+
+	Every Loam is paired with a Mantle.
+	For example, paired with the Loam  'Connection (Lve)'  is the Mantle  'Connector'.
+
+	Additionally, every Mantle is paired with an Act.
+	It is a verb given in its -ing form.
+	For example, paired with the Mantle  'Connector'  is the Act  'connecting'.
+
+	Continuously doing that Act makes one a 'Wearer' of the Mantle.
+
+	In the First Garden, here are the Five Root Loams paired with the Five Root Mantles:
+
+		Sustenance (Hth)  ::  Sustainer (sustaining)
+		Development (Tth)  ::  Developer (developing)
+		Connection (Lve)  ::  Connector (connecting)
+		Enrichment (Bty)  ::  Enricher (enriching)
+		Guidance (Pce)  ::  Guider (guiding)
+
+	A Wearer 'furthers' their Loam and is 'directed' by their Root.
+	Hence, a Connector furthers Connection (Lve) and is directed by Love.
+
+	The largest Loam is  Life (Lfe).
+
+	It seems to be paired with the Root of Goodness, but this is not the full story.
+
+	The Mantle paired with Life (Lfe) is a mystery for now.
+
+... Mantle ))
+
+
+
+(( Body ...
+
+Essence
+
+	~ Part of One which extends over Space ~
+
+
+Explanation
+
+	Breathing, moving, sensing.
+	These are things the Body does.
+
+	The Body is one of the Five Parts of a Person.
+
+	It is the Part of One which extends over Space.
+	This may be extended to include bodies in virtual spaces.
+
+	The Body is paired with the Root of Health.
+
+	To make Health better, sustain the Body.
+	As the Body’s Needs give the Instincts to Live.
+
+... Body ))
+
+
+
+(( Mind ...
+
+Essence
+
+	~ Part of One which thinks & understands ~
+
+
+Explanation
+
+	Thinking and understanding.
+	These are things the Mind does.
+
+	The Mind is one of the Five Parts of a Person.
+
+	The Mind is paired with the Root of Truth.
+
+	To find more Truth, develop the Mind.
+	As the Mind reflects the Truth of the World.
+
+... Mind ))
+
+
+
+(( Heart ...
+
+Essence
+
+	~ Part of One which extends to People ~
+
+
+Explanation
+
+	Connecting to Others.
+	This is what the Heart does.
+
+	The Heart is one of the Five Parts of a Person.
+
+	The Heart is paired with the Root of Love.
+
+	To make Love better, connect Hearts.
+	As the Heart’s Desires give the Reasons to Live.
+
+... Heart ))
+
+
+
+(( Soul ...
+
+Essence
+
+	~ Part of One which dreams & experiences ~
+
+
+Explanation
+
+	Dreaming and experiencing.
+	These are things the Soul does.
+
+	The Soul is one of the Five Parts of a Person.
+
+	The Soul is paired with the Root of Beauty.
+
+	To find more Beauty, enrich the Soul.
+	As the Soul projects Beauty onto the World.
+
+... Soul ))
+
+
+
+(( Spirit ...
+
+Essence
+
+	~ Part of One which extends over Time ~
+
+
+Explanation
+
+	The past, the present, the future.
+	These are what the Spirit of One extends to.
+
+	The Spirit is one of the Five Parts of a Person.
+
+	It is the Part of One which extends over Time.
+
+	The Spirit is paired with the Root of Peace.
+
+	To make the Peace better, guide the Spirit.
+	As the Spirit’s Rules give the Ways to Live.
+
+... Spirit ))
+
+
+
+(( Health ...
+
+Essence
+
+	~ Goodness of the Needs of People ~
+
+
+Explanation
+
+	Health regards Goodness of the Needs of People.
+	It is one of the Five Roots of Life.
+
+	Health is regarded as stability in Space.
+
+... Health ))
+
+
+
+(( Truth ...
+
+Essence
+
+	~ Goodness of Minds reflecting Worlds ~
+
+
+Explanation
+
+	Truth regards Goodness of Minds reflecting Worlds.
+	It is one of the Five Roots of Life.
+
+	Truth is interpreted as mental or internal structures corresponding with mundane or external structures.
+
+	Familiarly, this is seen in accurate beliefs.
+	More generally, it may manifest in a measurement, a textbook, a program, and so on.
+
+... Truth ))
+
+
+
+(( Love ...
+
+Essence
+
+	~ Goodness of the Bonds of People ~
+
+
+Explanation
+
+	Love regards Goodness of the Bonds of People
+	It is one of the Five Roots of Life.
+
+	Love is the Purpose of People.
+
+... Love ))
+
+
+
+(( Beauty ...
+
+Essence
+
+	~ Goodness of Worlds reflecting Souls ~
+
+
+Explanation
+
+	Beauty regards Goodness of Worlds reflecting Souls.
+	It is one of the Five Roots of Life.
+
+	Beauty is interpreted as mundane or external structures corresponding with mental or internal structures.
+
+	Familiarly, this is seen in artistic expressions.
+	More generally, it may be every choice made without a reasoned best option.
+
+... Beauty ))
+
+
+
+(( Peace ...
+
+Essence
+
+	~ Goodness of the Rule of People ~
+
+
+Explanation
+
+	Peace regards Goodness of the Rule of People
+	It is one of the Five Roots of Life.
+
+	Peace is interpreted as stability over Time.
+
+... Peace ))
+
+
+
+(( Success ...
+
+Essence
+
+	~ All Actual Past Actions of One ~
+
+
+Explanation
+
+	Success is all the actual past actions of One.
+	
+	For a Person, it’s all their accomplishments.
+	More generally, it is their entire impact and effect on this World.
+	
+	It is important to be clear that Successes may be Good, Mixed, or Evil.
+	Usually, 'success' is considered only to be Good.
+	But, someone may have Evil goals, achieve them, and consider themselves successful.
+
+... Success ))
+
+
+
+(( Freedom ...
+
+Essence
+
+	~ All Perceived Present Choices of One ~
+
+
+Explanation
+
+	Freedom is all the perceived present choices of One.
+	
+	A person may be confined to a small and dark room, but have more Freedom than one who is not.
+	This is if they have a strong enough Mind that they can change to what they want.
+
+	Freedoms may be Good, Mixed, or Evil.
+
+... Freedom ))
+
+
+
+(( Power ...
+
+Essence
+
+	~ All Possible Future Actions of One ~
+
+
+Explanation
+
+	Power is all possible future actions of One.
+	For people, it is all their abilities.
+	More generally, it is all their potential.
+	Powers may be for Good, Mixed, or Evil purposes.
+
+... Power ))
+
+
+
+(( Character ...
+
+Essence
+
+	~ The Goodness of Success ~
+
+
+Explanation
+
+	Character is the Goodness of Success.
+	This covers actual actions for the Greatest Good.
+	It appears as righteousness.
+	And it arises from Spiritual Strength.
+
+... Character ))
+
+
+
+(( Courage ...
+
+Essence
+
+	~ The Goodness of Freedom ~
+
+
+Explanation
+
+	Courage is the Goodness of Freedom.
+
+	It is the subset of perceived present choices, which are perceived as most Good, and then to act upon them.
+	
+	It has Serving Roots in later Gardens:
+		Strength of Body
+		Curiosity of Mind
+		Charm of Heart
+		Liberality of Soul
+		Hope of Spirit
+
+... Courage ))
+
+
+
+(( Patience ...
+
+Essence
+
+	~ The Best of Powers ~
+
+
+Explanation
+
+	Patience is the Best of Powers.
+	This covers possible actions for the Greatest Good.
+	It appears as endurance.
+	And it gives rise to Bodily Hope.
+
+... Patience ))
+
+
+
+(( Evilness ...
+
+Essence
+
+	~ Lowness of the Worth of Being ~
+
+
+Explanation
+
+	Evilness is lowness of the Worth of Being.
+	Its lowness of quality, merit, and content.
+
+... Evilness ))
+
+
+
+(( Meagreness ...
+
+Essence
+
+	~ Lowness of the Growth of Being ~
+
+
+Explanation
+
+	Meagreness is lowness of the Growth of Being.
+	Its lowness of quantity, magnitude, and extent.
+
+... Meagreness ))
+
+
+
+(( Goodness ...
+
+Essence
+
+	~ Highness of the Worth of Being ~
+
+
+Explanation
+
+	Goodness is highness of the Worth of Being.
+	Its highness of quality, merit, and content.
+
+	The Five Roots of Life are SubRoots of Goodness.
+
+	Its exact nature is found in later Gardens.
+
+	Its Mantle is currently a mystery.
+
+... Goodness ))
+
+
+
+(( Greatness ...
+
+Essence
+
+	~ Highness of the Growth of Being ~
+
+
+Explanation
+
+	Greatness is highness of the Growth of Being.
+	Its quantity, magnitude, and extent.
+
+	Its exact nature and relation to Goodness is found in later Gardens.
+
+... Greatness ))

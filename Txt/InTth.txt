@@ -1,0 +1,77 @@
+
+(( Inmost Truth ...
+
+Inmost Prime :
+
+   Loam :: Inmost Development
+   Code :: InTth
+
+   Root :: Inmost Truth
+Quality :: inmostly truthful
+
+ Mantle :: Inmost Developer
+    Act :: inmost developing
+
+
+Outline
+
+ Truth regards Minds reflecting Worlds.
+ Inmost Truth regards the reflecting itself.
+ This is the Loam of Thought (Tht).
+
+ Here, the ‘reflecting’ means understanding.
+ The universal thing to understand are the forms.
+ Therefore, develop understanding of the forms themselves.
+
+ For this, the nearest selected Loam is Mathematics (Mth).
+
+
+Resources
+
+  Foundational
+
+	Closed Book:
+		Israel M. Gelfand, Alexander Shen (1993), Algebra; Birkhäuser.
+		Serge Lang (1971), Basic Mathematics; Springer.
+	
+	Open Book:
+		Openstax (2020), Prealgebra.
+		Openstax (2021), Algebra and Trigonometry (2nd ed.).
+	
+	Web Resources:
+		khanacademy.org/math
+		mathigon.org
+		sorobanexam.org/generator.html
+
+  Intermediary
+
+	Closed Book:
+		Michael Spivak (2008), Calculus (4th ed.); Cambridge University Press.
+		H. S. M. Coxeter, Samuel L. Greitzer (1967), Geometry Revisited; American Mathematical Society.
+	
+	Open Book:
+		G. H. Hardy (1908), A Course in Pure Mathematics; Dover Publications.
+		Euclid of Alexandria (c. 300 BCE), Elements. (tr. Richard Fitzpatrick)
+	
+	Web Resources:
+		tutorial.math.lamar.edu
+		sagemath.org
+		geogebra.org/calculator
+		artofproblemsolving.com/community
+
+  Advanced
+
+	Closed Book:
+		A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent'ev (1999), Mathematics: Its Content, Methods and Meaning; Dover Publications.
+		I. N. Bronshtein, K. A. Semendyayev, Gerhard Musiol, Heiner Mühlig (2007), Handbook of Mathematics (5th ed.); Springer.
+
+	Open Book:
+		Evan Chen (Ongoing), An Infinitely Large Napkin.
+
+	Web Resources:
+		ocw.mit.edu/courses/mathematics
+		courses.maths.ox.ac.uk
+		overleaf.com
+		mathoverflow.net
+
+... Inmost Truth ))
