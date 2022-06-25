@@ -16,9 +16,9 @@ To make Health better, sustain the Body.
 
 Primes of Health
 
- * Inmost Health (InHth)
- * Foremost Health (FoHth)
- * Utmost Health (UtHth)
+* Inmost Health (InHth)
+* Foremost Health (FoHth)
+* Utmost Health (UtHth)
 
 
 How to Sustain?
@@ -26,20 +26,34 @@ How to Sustain?
 Here is how to sustain the Health of the Body:
 
 Increase your Strength.
- So, breathe deeply.
- Clean thoroughly.
- Drink water. Eat healthfully.
- Exercise harder. Sleep restfully.
 Increase your Wealth.
- So, straighten your posture. Dress yourself well.
- Sort out your tools. Care for your home.
- Explore the settlements of People.
- And explore the environments of Nature.
 Increase your Security.
- So, practice self-defence and practice protection of others.
- Sharpen your senses. Coordinate your body.
- Then welcome strangers and the adventures of travel.
- Finally, have some Sun.
+
+
+Increase your Strength.
+So, breathe deeply.
+Clean thoroughly.
+Drink water.
+Eat healthfully.
+Exercise harder.
+Sleep restfully.
+
+Increase your Wealth.
+So, straighten your posture.
+Dress yourself well.
+Sort out your tools.
+Care for your home.
+Explore the settlements of People.
+And explore the environments of Nature.
+
+Increase your Security.
+So, practice self-defence.
+And practice protection of others.
+Sharpen your senses.
+Coordinate your body.
+Then welcome strangers.
+Welcome the adventures of travel.
+Finally, have some Sun.
 
 
 ... Health ))
