@@ -1,0 +1,93 @@
+/* GENERAL */
+
+    body {margin: auto; max-width: 620px; text-align: center; font-family: 'EB Garamond'; line-height: 150%; padding-top: 10px}
+
+    a {text-decoration: none}
+    a:visited {text-decoration: none}
+
+    hr {max-width: 620px}
+
+
+/* TOP BANNER */
+
+    #the {font-size: 105%; color: grey; line-height:140%}
+    #garden {font-size: 180%; line-height:120%}
+
+    .topmenu {display: inline-block; width: 19%; text-align: center}
+    .banner {line-height: 1.5; max-width: 700px; margin: auto}
+
+    .health {color: #ee1d24}
+    .truth {color: #009000}
+    .love {color: #000000}
+    .beauty {color: #900090}
+    .peace {color: #0038b8}
+    .diamond {font-size: 80%; position: relative; top: -1px;}
+
+
+/* MIDDLE STUFF */
+
+    .whylabel {font-family: 'Roboto Mono'; font-size: 90%; color: grey; line-height:50%}
+    .whydiamond {font-size: 60%; position: relative; top: -2px}
+    .whyheader {font-size: 250%; line-height: 110%}
+
+    .whatwholabel {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
+    .whatwhoheader {font-size: 130%}
+
+    .primelabel {font-family: 'Roboto Mono'; font-size: 75%; color: grey; line-height:50%}
+    .primediamond {font-size: 50%; position: relative; top: -2px}
+    .primepreheader {font-size: 130%; line-height: 110%}
+    .primeheader {font-size: 180%; line-height: 110%}
+
+    .subprimelabel {font-family: 'Roboto Mono'; font-size: 75%; color: grey; line-height:50%}
+    .subprimediamond {font-size: 50%; position: relative; top: -2px}
+    .subprimepreheader {font-size: 100%; line-height: 110%}
+    .subprimeheader {font-size: 130%; line-height: 110%}
+
+    .arealabel {font-family: 'Courier New'; font-size: 80%; color: grey;}
+
+    .howto {line-height: 175%; width: 90%}
+    .howtoreason {color: grey}
+
+    .book {line-height: 175%; max-width: 100px; padding-left: 20px}
+
+    .primestitle {font-size: 140%}
+    .primeslist {font-size: 120%}
+
+    .practicetitle {font-size: 160%}
+
+    .howintro {line-height: 175%}
+    .how {line-height: 175%}
+
+    .resourcetitle {font-size: 150%}
+    .resourcelevel{font-size: 120%; color: #333333; line-height: 80%}
+    .resourcelist {text-align: left; padding: 10px}
+    .resourcetype {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
+    .resource {padding-left: 10px}
+
+    .level{font-size: 120%}
+
+    .inpcetime{font-size: 125%}
+    .inpcelabel{font-family: 'Roboto Mono'; font-size: 80%; color: grey}
+    .inpcesmall{font-size: 85%; color: grey}
+
+
+/* BOTTOM BANNER */
+
+    .bottommenu {display: inline-block; width: 32%; text-align: center}
+    .downloadmenu {display: inline-block; width: 45%; text-align: center}
+    .bottomdownload {font-family: 'Roboto Mono'; line-height: 0.5; font-size: 75%; font-weight: 540; color: #666666}
+    .icons {height: 22px; width: 22px}
+
+
+/* WEB RESPONSIVE */
+
+    @media (orientation: landscape) {
+
+    }
+
+    @media (orientation: portrait) {
+        .diamond {display: none}
+        .whydiamond {display: none}
+        .primediamond {display: none}
+        .subprimediamond {display: none}
+    }
