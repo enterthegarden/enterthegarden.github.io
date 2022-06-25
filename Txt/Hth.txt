@@ -1,14 +1,14 @@
-
 (( Health ...
 
-   Loam :: Sustenance
-   Code :: Hth
+Why?
+Health is for Goodness.
 
-   Root :: Health
-Quality :: healthy
+What?
+Sustenance is part of Improvement.
 
- Mantle :: Sustainer
-    Act :: sustaining
+Who?
+Sustainers are Improvers.
+
 
 To make Health better, sustain the Body.
 (As the Body’s Needs give the Instincts to Live.)
@@ -21,25 +21,25 @@ Primes of Health
  * Utmost Health (UtHth)
 
 
-Practice
+How to Sustain?
 
-The following are practical acts and habits to sustain the Health of the Body:
+Here is how to sustain the Health of the Body:
 
 Increase your Strength.
-	So, breathe deeply.
-	Clean thoroughly.
-	Drink water. Eat healthfully.
-	Exercise harder. Sleep restfully.
+ So, breathe deeply.
+ Clean thoroughly.
+ Drink water. Eat healthfully.
+ Exercise harder. Sleep restfully.
 Increase your Wealth.
-	So, straighten your posture. Dress yourself well.
-	Sort out your tools. Care for your home.
-	Explore the settlements of People.
-	And explore the environments of Nature.
+ So, straighten your posture. Dress yourself well.
+ Sort out your tools. Care for your home.
+ Explore the settlements of People.
+ And explore the environments of Nature.
 Increase your Security.
-	So, practice self-defence and practice protection of others.
-	Sharpen your senses. Coordinate your body.
-	Then welcome strangers and the adventures of travel.
-	Finally, have some Sun.
+ So, practice self-defence and practice protection of others.
+ Sharpen your senses. Coordinate your body.
+ Then welcome strangers and the adventures of travel.
+ Finally, have some Sun.
 
 
 ... Health ))
