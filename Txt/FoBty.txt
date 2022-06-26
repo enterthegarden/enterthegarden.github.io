@@ -1,69 +1,71 @@
-
 (( Foremost Beauty ...
 
-Foremost Prime :
+Why?
+Foremost Beauty is for Beauty.
+Beauty is for Goodness.
 
-   Loam :: Foremost Enrichment
-   Code :: FoBty
+What?
+Foremost Enrichment is part of Enrichment.
+Enrichment is part of Improving.
 
-   Root :: Foremost Beauty
-Quality :: foremostly beautiful
-
- Mantle :: Foremost Enricher
-    Act :: foremost enriching
+Who?
+Foremost Enrichers are Enrichers.
+Enrichers are Improvers.
 
 
-Outline
+Beauty regards the World reflecting the Soul.
+Foremost Beauty regards the Souls of People reflected onto this World.
 
- Beauty regards the World reflecting the Soul.
- Foremost Beauty regards the Souls of People, as they are, reflected onto this World.
+Here, the ‘reflecting’ means experiencing.
+Its Aspects are Art (Art) and Culture (Clt).
+Therefore, experience these Aspects, as they seem, now.
 
- Here, the ‘reflecting’ means experiencing.
- Its Aspects are Art (Art) and Culture (Clt).
- Therefore, experience these Aspects, as they seem, Now.
+This is far beyond the scope of a single page.
+However, the selected Areas are:
+Imagery (Img), Architecture (Arc), Cooking (Ckg)
 
- This is far beyond the scope of a single page.
- However, the selected Loams are:
-  Imagery (Img), Architecture (Arc), Cooking (Ckg)
 
- Resources
+Resources
 
-  Imagery
+Imagery
 
-	Closed Book:
-		Fred Kleiner (2018), Gardner’s Art Through the Ages: A Global History; Wadsworth Publishing.
-	
-	Open Book:
-		Pamela Sachant (2016), Introduction to Art: Design, Context, and Meaning; University of North Georgia Press.
-	
-	Web Resources:
-		inkscape.org
-		YouTube: Alphonso Dunn Playlist
-		fediverse.party/en/pixelfed
+Priced Book:
+* Fred Kleiner (2018), Gardner’s Art Through the Ages: A Global History; Wadsworth Publishing.
 
-  Architecture
+Free Book:
+* Pamela Sachant (2016), Introduction to Art: Design, Context, and Meaning; University of North Georgia Press.
 
-	Closed Book:
-		Le Corbusier (1995), Towards a New Architecture; Dover Publishing.
-	
-	Open Book:
-		Marcus Vitruvius Pollio (~20 BC), The Ten Books on Architecture (De architectura).
-	
-	Web Resources:
-		freecadweb.org
-		ocw.mit.edu/courses/architecture
+Web Resources:
+* InkScape
+* Alphonso Dunn Playlist
+* PixelFed
 
-  Cooking
 
-	Closed Book:
-		Harold McGee (2004), McGee on Food and Cooking, Hodder & Stoughton.
-	
-	Open Book:
-		Sorangel Rodriguez-Velazquez (2016), Chemistry of Cooking, Sorangel Rodriguez-Velazquez.
-	
-	Web Resources:
-		recipe-search.typesense.org
-		en.wikipedia.org/wiki/Portal:Food
-		cooking.stackexchange.com
+Architecture
+
+Priced Book:
+* Le Corbusier (1995), Towards a New Architecture; Dover Publishing.
+
+Free Book:
+* Marcus Vitruvius Pollio (~20 BC), The Ten Books on Architecture (De architectura).
+
+Web Resources:
+* FreeCAD
+* MIT OCW: Architecture
+
+
+Cooking
+
+Priced Book:
+* Harold McGee (2004), McGee on Food and Cooking, Hodder & Stoughton.
+
+Free Book:
+* Sorangel Rodriguez-Velazquez (2016), Chemistry of Cooking.
+
+Web Resources:
+* recipe-search
+* Wikipedia Portal: Food
+* Cooking Stack Exchange
+
 
 ... Foremost Beauty ))

@@ -1,77 +1,75 @@
-
 (( Inmost Truth ...
 
-Inmost Prime :
+Why?
+Inmost Truth is for Truth.
+Truth is for Goodness.
 
-   Loam :: Inmost Development
-   Code :: InTth
+What?
+Inmost Development is part of Development.
+Development is part of Improving.
 
-   Root :: Inmost Truth
-Quality :: inmostly truthful
-
- Mantle :: Inmost Developer
-    Act :: inmost developing
+Who?
+Inmost Developers are Developers.
+Developers are Improvers.
 
 
-Outline
+Truth regards the Mind reflecting the World.
+Inmost Truth regards the process of reflecting.
+This is Thought (Tht).
 
- Truth regards Minds reflecting Worlds.
- Inmost Truth regards the reflecting itself.
- This is the Loam of Thought (Tht).
+Here, the ‘reflecting’ means understanding.
+The universal thing to understand are the forms.
+So, develop understanding of the forms themselves.
 
- Here, the ‘reflecting’ means understanding.
- The universal thing to understand are the forms.
- Therefore, develop understanding of the forms themselves.
-
- For this, the nearest selected Loam is Mathematics (Mth).
+For this, the most relevant Area is Mathematics (Mth).
 
 
 Resources
 
-  Foundational
+Foundational
 
-	Closed Book:
-		Israel M. Gelfand, Alexander Shen (1993), Algebra; Birkhäuser.
-		Serge Lang (1971), Basic Mathematics; Springer.
-	
-	Open Book:
-		Openstax (2020), Prealgebra.
-		Openstax (2021), Algebra and Trigonometry (2nd ed.).
-	
-	Web Resources:
-		khanacademy.org/math
-		mathigon.org
-		sorobanexam.org/generator.html
+Priced Books:
+* Israel M. Gelfand, Alexander Shen (1993), Algebra; Birkhäuser.
+* Serge Lang (1971), Basic Mathematics; Springer.
 
-  Intermediary
+Free Books:
+* Openstax (2020), Prealgebra.
+* Openstax (2021), Algebra and Trigonometry (2nd ed.).
 
-	Closed Book:
-		Michael Spivak (2008), Calculus (4th ed.); Cambridge University Press.
-		H. S. M. Coxeter, Samuel L. Greitzer (1967), Geometry Revisited; American Mathematical Society.
-	
-	Open Book:
-		G. H. Hardy (1908), A Course in Pure Mathematics; Dover Publications.
-		Euclid of Alexandria (c. 300 BCE), Elements. (tr. Richard Fitzpatrick)
-	
-	Web Resources:
-		tutorial.math.lamar.edu
-		sagemath.org
-		geogebra.org/calculator
-		artofproblemsolving.com/community
+Web Resources:
+* Khan Academy.org
+* Mathigon.org
+* Sorobon Exam.org
 
-  Advanced
 
-	Closed Book:
-		A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent'ev (1999), Mathematics: Its Content, Methods and Meaning; Dover Publications.
-		I. N. Bronshtein, K. A. Semendyayev, Gerhard Musiol, Heiner Mühlig (2007), Handbook of Mathematics (5th ed.); Springer.
+Intermediary
 
-	Open Book:
-		Evan Chen (Ongoing), An Infinitely Large Napkin.
+Priced Books:
+* Michael Spivak (2008), Calculus (4th ed.); Cambridge University Press.
+* H. S. M. Coxeter, Samuel L. Greitzer (1967), Geometry Revisited; American Mathematical Society.
 
-	Web Resources:
-		ocw.mit.edu/courses/mathematics
-		courses.maths.ox.ac.uk
-		overleaf.com
-		mathoverflow.net
+Free Books:
+* G. H. Hardy (1908), A Course in Pure Mathematics; Dover Publications.
+* Euclid of Alexandria (c. 300 BCE), Elements. (tr. Richard Fitzpatrick)
+
+Web Resources:
+* Paul’s Online Notes
+* SageMath
+* Geogebra
+* AoPS Community
+
+
+Advanced
+
+Priced Books:
+* A. D. Aleksandrov, A. N. Kolmogorov, M. A. Lavrent'ev (1999), Mathematics: Its Content, Methods and Meaning; Dover Publications.
+* I. N. Bronshtein, K. A. Semendyayev, Gerhard Musiol, Heiner Mühlig (2007), Handbook of Mathematics (5th ed.); Springer.
+
+Web Resources:
+* MIT OCW
+* Oxford Notes
+* OverLeaf
+* MathOverflow
+
 
 ... Inmost Truth ))

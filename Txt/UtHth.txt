@@ -1,46 +1,47 @@
-
 (( Utmost Health ...
 
-Utmost Prime :
+Why?
+Utmost Health is for Health.
+Health is for Goodness.
 
-   Loam :: Utmost Sustenance
-   Code :: UtHth
+What?
+Utmost Sustenance is part of Sustenance.
+Sustenance is part of Improving.
 
-   Root :: Utmost Health
-Quality :: utmostly healthy
-
- Mantle :: Utmost Sustainer
-    Act :: utmost sustaining
-
-
-Outline
-
- Health regards the Needs of People.
- Utmost Health regards the Needs of Everyone.
-
- There is an escalating probability of global disaster.
- There are natural precedents for this;
- such as the Carrington Event and the COVID-19 pandemic.
- And there are artificial possibilities for this;
- such as nuclear holocaust and uncontrolled artificial intelligence.
- Therefore, preparations must be made.
-
- Support projects increasing the modularity of society;
- such as eGranary and the Svalbard Global Seed Vault.
- Support better emergency management.
- And, most importantly, support better Guidance (Pce) for us all.
+Who?
+Utmost Sustainers are Sustainers.
+Sustainers are Improvers.
 
 
-  Advanced
+Health regards the Needs of People.
+Utmost Health regards the Needs of Everyone.
 
-	Closed Book:
-		Toby Ord (2020), The Precipice: Existential Risk and the Future of Humanity; Hachette Books.
+There is an escalating probability of global disaster.
+There are natural precedents for this;
+such as the Carrington Event and the COVID-19 pandemic.
+And there are artificial possibilities for this;
+such as nuclear holocaust and uncontrolled artificial intelligence.
+Therefore, preparations must be made.
 
-	Open Book:
-		Global Challenges Foundation (2021), Global Catastrophic Risks 2021.
+Support projects increasing the modularity of society;
+such as eGranary and the Svalbard Global Seed Vault.
+Support better emergency management.
+And, most importantly, support better Guidance for us all.
 
-	Web Resources:
-		fhi.ox.ac.uk
-		thechicagocouncil.org
+
+Resources
+
+Advanced
+
+Priced Book:
+* Toby Ord (2020), The Precipice: Existential Risk and the Future of Humanity; Hachette Books.
+
+Free Book:
+* Global Challenges Foundation (2021), Global Catastrophic Risks 2021.
+
+Web Resources:
+* Future of Humanity Institute (FHI)
+* The Chicago Council
+
 
 ... Utmost Health ))

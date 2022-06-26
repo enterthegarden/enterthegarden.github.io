@@ -1,87 +1,70 @@
-
 (( Utmost Beauty ...
 
-Utmost Prime :
+Why?
+Utmost Beauty is for Beauty.
+Beauty is for Goodness.
 
-   Loam :: Utmost Enrichment
-   Code :: UtBty
+What?
+Utmost Enrichment is part of Enrichment.
+Enrichment is part of Improving.
 
-   Root :: Utmost Beauty
-Quality :: utmostly beautiful
-
- Mantle :: Utmost Enricher
-    Act :: utmost enriching
+Who?
+Utmost Enrichers are Enrichers.
+Enrichers are Improvers.
 
 
-Outline
+Beauty regards the World reflecting the Soul.
+Utmost Beauty regards the World able to reflect All Souls.
+This is Worldbuilding (WdB).
 
- Beauty regards the World reflecting the Soul.
- Utmost Beauty regards the World able to reflect every Soul.
- This is the Loam of Worldbuilding (WdB).
+With few resources, a relevant Area is Literature (Lit).
+With modern resources, a relevant art is artificial reality.
 
- With few resources, a relevant Loam is Literature (Lit).
- With modern resources, a relevant art is artificial reality.
+Artificial reality has seen rapid advances recently.
+If current progress rates continue, dependence on extended realities is possible.
+Therefore, this art must be engaged with wisely.
 
- Artificial reality has seen rapid advances recently.
- If current progress rates continue, dependence on extended realities is possible.
- Therefore, this art must be engaged with wisely.
 
 Resources
 
-  Intermediary
+Literature
 
-   (Literature)
+Priced Books:
+* The Journey to the West by Wu Cheng'en (1592) (tr. Anthony C. Yu)
+* The Hobbit by J. R. R. Tolkein (1937)
+* One Hundred Years of Solitude by Gabriel García Márquez (1967) (tr. Gregory Rabassa)
 
-	Closed Book:
-		The Journey to the West by Wu Cheng'en (1592) (tr. Anthony C. Yu)
-		The Hobbit by J. R. R. Tolkein (1937)
-	
-	Open Book:
-		One Thousand and One Nights (~ 8th c. to 14th c.) (tr. Edward William Lane)
-		A Tale of Two Cities by Charles Dickens (1859)
-		Alice's Adventures in Wonderland by Lewis Carroll (1865)
+Free Books:
+* One Thousand and One Nights (~ 8th c. to 14th c.) (tr. Edward William Lane)
+* A Tale of Two Cities by Charles Dickens (1859)
+* Alice's Adventures in Wonderland by Lewis Carroll (1865)
+* The Iliad and The Odyssey by Homer (~ 8th c.) (tr. Alexander Pope, Samuel Butler)
+* Don Quixote by Miguel de Cervantes (1605, 1615) (tr. John Ormsby)
+* The First Folio by William Shakespeare (1623)
+* Anna Karenina by Leo Tolstoy (1878) (tr. Constance Garnett)
 
-   (Artificial Reality)
+Web Resources:
+* Project Gutenberg
+* LibriVox
+* Manuskript
 
-	Closed Book:
-		Jon Woodcock (2019), Coding Games in Scratch; Dorling Kindersley Children.
-	
-	Open Book:
-		Al Sweigart (2021), Scratch Programming Playground; No Starch Press.
-	
-	Web Resources:
-		scratch.mit.edu
-		trilarion.github.io/opensourcegames
 
-  Advanced
+Artificial Reality
 
-   (Literature)
+Priced Books:
+* Jon Woodcock (2019), Coding Games in Scratch; Dorling Kindersley Children.
+* Jesse Schell (2019), The Art of Game Design: A Book of Lenses (3rd ed.); CRC Press.
 
-	Closed Book:
-		One Hundred Years of Solitude by Gabriel García Márquez (1967) (tr. Gregory Rabassa)
-	
-	Open Book:
-		The Iliad and The Odyssey by Homer (~ 8th c.) (tr. Alexander Pope, Samuel Butler)
-		Don Quixote by Miguel de Cervantes (1605, 1615) (tr. John Ormsby)
-		The First Folio by William Shakespeare (1623)
-		Anna Karenina by Leo Tolstoy (1878) (tr. Constance Garnett)
-	
-	Web Resources:
-		gutenberg.org
-		librivox.org
-		theologeek.ch/manuskript
+Free Books:
+* Al Sweigart (2021), Scratch Programming Playground; No Starch Press.
+* Richard A. Bartle (2003), Designing Virtual Worlds.
 
-   (Artificial Reality)
+Web Resources:
+* Scratch
+* OSGL
+* Godot
+* Blender
+* GIMP
 
-	Closed Book:
-		Jesse Schell (2019), The Art of Game Design: A Book of Lenses (3rd ed.); CRC Press.
-	
-	Open Book:
-		Richard A. Bartle (2003), Designing Virtual Worlds.
-	
-	Web Resources:
-		godotengine.org
-		blender.org
-		gimp.org
 
 ... Utmost Beauty ))

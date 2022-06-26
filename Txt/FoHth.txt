@@ -1,52 +1,52 @@
-
 (( Foremost Health ...
 
-Foremost Prime :
+Why?
+Foremost Health is for Health.
+Health is for Goodness.
 
-   Loam :: Foremost Sustenance
-   Code :: FoHth
+What?
+Foremost Sustenance is part of Sustenance.
+Sustenance is part of Improving.
 
-   Root :: Foremost Health
-Quality :: foremostly healthy
-
- Mantle :: Foremost Sustainer
-    Act :: foremost sustaining
+Who?
+Foremost Sustainers are Sustainers.
+Sustainers are Improvers.
 
 
-Outline
+Health regards the Needs of People.
+Foremost Health regards the Needs of Others.
 
- Health regards the Needs of People.
- Foremost Health regards the Needs of Others.
+There is a varying probability of local disaster.
+The commonest examples being floods, storms, and earthquakes.
+Therefore, preparations must be made.
 
- There is a varying probability of local disaster.
- The commonest examples being floods, storms, and earthquakes.
- Therefore, preparations must be made.
-
- Improve survival skills by having survival tools:
- An everyday carry, a survival kit, and a well-supplied shelter.
- Improve survival knowledge by receiving survival training.
- And, most importantly, maintain the will to survive.
+Improve survival skills by having survival tools:
+An everyday carry, a survival kit, and a well-supplied shelter.
+Improve survival knowledge by receiving survival training.
+And, most importantly, maintain the will to survive.
 
 
 Resources
 
-  Foundational
+Foundational
 
-	Closed Book:
-		Colin Towell (2012), The Survival Handbook: Essential Skills for Outdoor Adventure; Dorling Kindersley.
-	
-	Open Book:
-		Boy Scouts of America (2010), Wilderness Survival.
+Priced Book:
+* Colin Towell (2012), The Survival Handbook: Essential Skills for Outdoor Adventure; Dorling Kindersley.
 
-  Advanced
+Free Book:
+* Boy Scouts of America (2010),  Wilderness Survival.
 
-	Closed Book:
-		John ‘Lofty’ Wiseman (2014), SAS: Survival Handbook (3rd ed.); William Collins.
 
-	Open Book:
-		US ARMY (1992), FM 21-76 Survival.
+Intermediary
 
-	Web Resources:
-		survivorlibrary.com
+Priced Book:
+* John ‘Lofty’ Wiseman (2014), SAS: Survival Handbook (3rd ed.); William Collins.
+
+Free Book:
+* US ARMY (1992), FM 21-76 Survival.
+
+Web Resources:
+* Survivor Library
+
 
 ... Foremost Health ))

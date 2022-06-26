@@ -1,66 +1,92 @@
-
 (( Inmost Beauty ...
 
-Inmost Prime :
+Why?
+Inmost Beauty is for Beauty.
+Beauty is for Goodness.
 
-   Loam :: Inmost Enrichment
-   Code :: InBty
+What?
+Inmost Enrichment is part of Enrichment.
+Enrichment is part of Improving.
 
-   Root :: Inmost Beauty
-Quality :: inmostly beautiful
-
- Mantle :: Inmost Enricher
-    Act :: inmost enriching
-
-
-Outline
-
- Beauty regards the World reflecting the Soul.
- Inmost Beauty regards the reflecting itself.
- This is the Loam of Dream (Drm).
-
- Here, the ‘reflecting’ means experiencing.
- The universal thing to experience are the senses.
- Therefore, enrich experiencing of the senses themselves.
-
- For this, the nearest selected Loam is Music (Mus).
+Who?
+Inmost Enrichers are Enrichers.
+Enrichers are Improvers.
 
 
- Resources
+Beauty regards the World reflecting the Soul.
+Inmost Beauty regards the process of reflecting.
+This is Dream (Drm).
 
-  Foundational
+Here, the ‘reflecting’ means experiencing.
+The universal thing to experience are the senses.
+So, enrich experiencing of the senses themselves.
 
-	Closed Book:
-		Jeff Todd Titon, Timothy J. Cooley, David Locke, Anne K. Rasmussen, David B. Reck (2017), Worlds of Music, Shorter Version (4th ed.); Cengage Learning.
-	
-	Open Book:
-		Russell Jones, Catherine Schmidt-Jones (2005), Understanding Basic Music Theory.
-	
-	Web Resources:
-		musictheory.net/lessons
-		beepbox.co
+For this, the most relevant Area is Music (Mus).
 
-  Intermediary
 
-	Closed Book:
-		Terry E. Miller, Andrew Shahriari (2012), World Music: A Global Journey (4th ed.); Routledge.
-	
-	Open Book:
-		N. Alan Clark, Thomas Heflin, Jeffrey Kluball, Elizabeth Kramer (2015), Understanding Music: Past and Present; University of North Georgia Press.
-	
-	Web Resources:
-		funkwhale.audio
-		audacityteam.org
-		lmms.io
+Resources
 
-  Selection
+Foundational
 
-	The following are regions to begin sampling traditional music from:
-		United States, China, Japan, Germany, United Kingdom,
-		India, France, Italy, Canada, South Korea,
-		Indonesia, Pakistan, Brazil, Nigeria, Bangladesh,
-		Russia, Egypt, Mexico, Ethiopia, Philippines,
-		Argentina, Australia, Turkey, Saudi Arabia, South Africa,
-		Colombia, Spain, Algeria, Israel | Palestine, Thailand
+Priced Book:
+* Jeff Todd Titon, Timothy J. Cooley, David Locke, Anne K. Rasmussen, David B. Reck (2017), Worlds of Music, Shorter Version (4th ed.); Cengage Learning.
+
+Free Book:
+* Russell Jones, Catherine Schmidt-Jones (2005), Understanding Basic Music Theory.
+
+Web Resources:
+* MusicTheory
+* BeepBox
+
+
+Intermediary
+
+Priced Book:
+* Terry E. Miller, Andrew Shahriari (2012), World Music: A Global Journey (4th ed.); Routledge.
+
+Free Book:
+* N. Alan Clark, Thomas Heflin, Jeffrey Kluball, Elizabeth Kramer (2015), Understanding Music: Past and Present; University of North Georgia Press.
+
+Web Resources:
+* FunkWhale
+* Audacity
+* LMMS
+
+
+Selection
+
+The following are regions to begin sampling traditional music from:
+
+* United States
+* China
+* Japan
+* Germany
+* United Kingdom
+* India
+* France
+* Italy
+* Canada
+* South Korea
+* Indonesia
+* Pakistan
+* Brazil
+* Nigeria
+* Bangladesh
+* Russia
+* Egypt
+* Mexico
+* Ethiopia
+* Philippines
+* Argentina
+* Australia
+* Turkey
+* Saudi Arabia
+* South Africa
+* Colombia
+* Spain
+* Algeria
+* Israel | Palestine
+* Thailand
+
 
 ... Inmost Beauty ))
