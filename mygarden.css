@@ -46,7 +46,7 @@
 
     .arealabel {font-family: 'Courier New'; font-size: 80%; color: grey;}
 
-    .howto {line-height: 175%; width: 90%}
+    .howto {line-height: 175%}
     .howtoreason {color: grey}
 
     .book {line-height: 175%; max-width: 100px; padding-left: 20px}
