@@ -3,7 +3,7 @@
     body {margin: auto; max-width: 620px; text-align: center; font-family: 'EB Garamond'; line-height: 150%; padding-top: 10px}
 
     a {text-decoration: none}
-    a:visited {text-decoration: none; color:#0000BB;}
+    a:visited {text-decoration: none; color:#0000BB}
 
     hr {max-width: 620px}
 
@@ -49,6 +49,9 @@
     .howto {line-height: 175%}
     .howtoreason {color: grey}
 
+    .field{font-weight: 900;}
+    .command{font-size: 150%;}
+
     .book {line-height: 175%; max-width: 100px; padding-left: 20px}
 
     .primestitle {font-size: 140%}
@@ -60,22 +63,32 @@
     .how {line-height: 175%}
 
     .resourcetitle {font-size: 150%}
-    .resourcelevel{font-size: 120%; color: #333333; line-height: 80%}
+    .resourcelevel{font-size: 120%; font-weight: 900; line-height: 80%}
     .resourcelist {text-align: left; padding: 10px}
     .resourcetype {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .resource {padding-left: 10px}
 
+    .adjective{font-size: 85%;}
     .level{font-size: 120%}
 
     .inpcetime{font-size: 125%}
     .inpcelabel{font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .inpcesmall{font-size: 85%; color: grey}
 
+    .activities{font-family: 'Roboto Mono'; font-size: 80%; color: grey;}
+
+    .storytitle{font-size: 140%}
+    .story{text-align: left; line-height:160%;}
+
+    .philosopher{font-weight: bold}
+    .dates{color: grey; font-size: 80%; font-family: 'Roboto Mono';}
+
 
 /* BOTTOM BANNER */
 
     .bottommenu {display: inline-block; width: 32%; text-align: center}
     .downloadmenu {display: inline-block; width: 45%; text-align: center}
+    .threemenu {display: inline-block; width: 31%; text-align: center}
     .bottomdownload {font-family: 'Roboto Mono'; line-height: 0.5; font-size: 75%; font-weight: 540; color: #666666}
     .icons {height: 22px; width: 22px}
 
