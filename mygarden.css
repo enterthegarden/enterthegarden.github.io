@@ -31,11 +31,14 @@
     .whydiamond {font-size: 60%; position: relative; top: -2px}
     .whyheader {font-size: 250%; line-height: 110%}
 
+    .godwayheader {font-size: 250%; line-height: 70%}
+
     .whatwholabel {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .whatwhoheader {font-size: 130%}
 
     .primelabel {font-family: 'Roboto Mono'; font-size: 75%; color: grey; line-height:50%}
     .primediamond {font-size: 60%; position: relative; top: -2px}
+    .primepreheadersmaller {font-size: 110%; line-height: 110%}
     .primepreheader {font-size: 130%; line-height: 110%}
     .primeheader {font-size: 180%; line-height: 110%}
 
@@ -84,7 +87,7 @@
 
 /* SCHEDULE TABLE */
 
-    .scheduleleft {display: inline-block; width: 20%; text-align: center}
+    .scheduleleft {display: inline-block; width: 20%; text-align: top center;}
     .value {font-family: 'Roboto Mono'; color: grey; font-size: 85%;}
     .valdiamond {font-size: 80%;}
 
@@ -118,7 +121,7 @@
 /* WEB RESPONSIVE */
 
     @media (orientation: landscape) {
-
+        .return {display: none}
     }
 
     @media (orientation: portrait) {
