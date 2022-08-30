@@ -96,13 +96,13 @@
 
 /* COMMEASURE TABLE */
 
-    .commeasureheaderleft {display: inline-block; width: 7%; text-align: right}
-    .commeasureheaderright {display: inline-block; width: 7%; text-align: left}
-    .commeasureheadercenter {display: inline-block; width: 80%; text-align: center}
+    .commeasureheaderleft {display: inline-block; width: 8%; text-align: right}
+    .commeasureheaderright {display: inline-block; width: 8%; text-align: left}
+    .commeasureheadercenter {display: inline-block; width: 78%; text-align: center}
 
-    .commeasureleft {display: inline-block; width: 7%; text-align: right}
-    .commeasureright {display: inline-block; width: 7%; text-align: left}
-    .commeasurecenter {display: inline-block; width: 80%; text-align: center}
+    .commeasureleft {display: inline-block; width: 8%; text-align: right}
+    .commeasureright {display: inline-block; width: 8%; text-align: left}
+    .commeasurecenter {display: inline-block; width: 78%; text-align: center}
 
 
 /* BOTTOM BANNER */
