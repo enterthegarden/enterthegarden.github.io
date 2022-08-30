@@ -35,7 +35,7 @@
     .whatwhoheader {font-size: 130%}
 
     .primelabel {font-family: 'Roboto Mono'; font-size: 75%; color: grey; line-height:50%}
-    .primediamond {font-size: 50%; position: relative; top: -2px}
+    .primediamond {font-size: 60%; position: relative; top: -2px}
     .primepreheader {font-size: 130%; line-height: 110%}
     .primeheader {font-size: 180%; line-height: 110%}
 
@@ -46,11 +46,19 @@
 
     .arealabel {font-family: 'Courier New'; font-size: 80%; color: grey;}
 
-    .howto {line-height: 175%}
+    .intropic {width: 55%; height: 55%; border: 5px solid #555;}
+
+    .howto {line-height: 175%; width: 90%}
     .howtoreason {color: grey}
 
-    .field{font-weight: 900;}
-    .command{font-size: 150%;}
+    .valuedefinition {color: grey}
+    .valuereason {font-weight: bold;}
+    .valueorder {font-size: 135%;}
+
+    .centernameline {color: #696969;}
+
+    .beforeaftermodule {color: grey;}
+    .divisionlabel {font-family: 'Roboto Mono'; font-size: 70%; color: grey}
 
     .book {line-height: 175%; max-width: 100px; padding-left: 20px}
 
@@ -63,35 +71,49 @@
     .how {line-height: 175%}
 
     .resourcetitle {font-size: 150%}
-    .resourcelevel{font-size: 120%; font-weight: 900; line-height: 80%}
+    .resourcelevel{font-size: 120%; color: #333333; line-height: 80%}
     .resourcelist {text-align: left; padding: 10px}
     .resourcetype {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .resource {padding-left: 10px}
 
-    .adjective{font-size: 85%;}
     .level{font-size: 120%}
 
     .inpcetime{font-size: 125%}
     .inpcelabel{font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .inpcesmall{font-size: 85%; color: grey}
 
-    .activities{font-family: 'Roboto Mono'; font-size: 80%; color: grey;}
+/* SCHEDULE TABLE */
 
-    .storytitle{font-size: 140%}
-    .story{text-align: left; line-height:160%;}
+    .scheduleleft {display: inline-block; width: 20%; text-align: center}
+    .value {font-family: 'Roboto Mono'; color: grey; font-size: 85%;}
+    .valdiamond {font-size: 80%;}
 
-    .philosopher{font-weight: bold}
-    .dates{color: grey; font-size: 80%; font-family: 'Roboto Mono';}
+    .scheduleright {display: inline-block; width: 74%; text-align: left}
+    .conjunction {color: #696969;}
+
+/* COMMEASURE TABLE */
+
+    .commeasureheaderleft {display: inline-block; width: 7%; text-align: right}
+    .commeasureheaderright {display: inline-block; width: 7%; text-align: left}
+    .commeasureheadercenter {display: inline-block; width: 80%; text-align: center}
+
+    .commeasureleft {display: inline-block; width: 7%; text-align: right}
+    .commeasureright {display: inline-block; width: 7%; text-align: left}
+    .commeasurecenter {display: inline-block; width: 80%; text-align: center}
 
 
 /* BOTTOM BANNER */
 
+    .waymenu {display: inline-block; width: 13%; text-align: center; line-height: 120%}
+    .waymenucenter {line-height: 60%;}
     .bottommenu {display: inline-block; width: 32%; text-align: center}
-    .downloadmenu {display: inline-block; width: 45%; text-align: center; vertical-align: top;}
-    .threemenu {display: inline-block; width: 31%; text-align: center}
+    .downloadmenu {display: inline-block; width: 45%; text-align: center}
     .bottomdownload {font-family: 'Roboto Mono'; line-height: 0.5; font-size: 75%; font-weight: 540; color: #666666}
     .icons {height: 22px; width: 22px}
 
+    .vertical-center {
+      vertical-align: top;
+    }
 
 /* WEB RESPONSIVE */
 
