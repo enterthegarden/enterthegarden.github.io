@@ -3,12 +3,12 @@
 
 /* GENERAL */
 
-    body {margin: auto; max-width: 620px; text-align: center; font-family: 'EB Garamond'; line-height: 150%; padding-top: 10px}
+    body {margin: auto; max-width: 800px; text-align: center; font-family: 'EB Garamond'; line-height: 150%; padding-top: 10px}
 
     a {text-decoration: none}
     a:visited {text-decoration: none; color:#0000BB}
 
-    hr {max-width: 620px}
+    hr {max-width: 800px}
 
 
 /* TOP BANNER */
@@ -17,7 +17,7 @@
     #garden {font-size: 180%; line-height:120%}
 
     .topmenu {display: inline-block; width: 19%; text-align: center}
-    .banner {line-height: 1.5; max-width: 700px; margin: auto}
+    .banner {line-height: 1.5; max-width: 800px; margin: auto}
 
     .health {color: #ee1d24}
     .truth {color: #009000}
@@ -112,6 +112,9 @@
     .commeasureright {display: inline-block; width: 8%; text-align: left}
     .commeasurecenter {display: inline-block; width: 78%; text-align: center}
 
+/* SPECIAL RELIGION TABLE */
+
+    .religionmenu {display: inline-block; width: 19%; text-align: center; line-height: 120%}
 
 /* BOTTOM BANNER */
 
