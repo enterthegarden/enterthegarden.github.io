@@ -31,6 +31,8 @@
 
 /* MIDDLE STUFF */
 
+    .roundaydiamond {font-size: 50%}
+
     .whylabel {font-family: 'Roboto Mono'; font-size: 90%; color: grey; line-height:50%}
     .whydiamond {font-size: 60%; position: relative; top: -2px}
     .whyheader {font-size: 250%; line-height: 110%}
@@ -58,6 +60,8 @@
   /* END OF REDUNDANT PRIME CSS */
 
     .intropic {width: 55%; height: 55%; border: 5px solid #555;}
+
+    .srvpic {width: 85%; height: 85%; border: 5px solid #555;}
 
     .howto {line-height: 175%; width: 90%}
     .howtoreason {color: grey}
