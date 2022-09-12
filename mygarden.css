@@ -31,6 +31,23 @@
 
 /* MIDDLE STUFF */
 
+    button {
+      font-family: 'EB Garamond';
+      background-color: #FFFFFF; /* Green */
+      border-top: 2px solid #C0C0C0;
+      border-bottom: 2px solid #C0C0C0;
+      border-left: 0px solid #C0C0C0;
+      border-right: 0px solid #C0C0C0;
+      color: #0000EE;
+      padding: 4px 1px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+
+
     .roundaydiamond {font-size: 50%}
 
     .whylabel {font-family: 'Roboto Mono'; font-size: 90%; color: grey; line-height:50%}
