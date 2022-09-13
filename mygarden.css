@@ -28,14 +28,26 @@
     .gray {color: #808080;}
     .diamond {font-size: 80%; position: relative; top: -1px;}
 
+/* TOP LOCATING BANNER */
+    .location {
+        display: inline-block;
+        width: 45%;
+        font-family: 'Roboto Mono';
+        font-size: 65%;
+        color: grey;
+        top: -100px;
+    }
+
+    .left {text-align: left}
+    .right {text-align: right}
 
 /* MIDDLE STUFF */
 
     button {
       font-family: 'EB Garamond';
       background-color: #FFFFFF; /* Green */
-      border-top: 2px solid #C0C0C0;
-      border-bottom: 2px solid #C0C0C0;
+      border-top: 1px solid #C0C0C0;
+      border-bottom: 1px solid #C0C0C0;
       border-left: 0px solid #C0C0C0;
       border-right: 0px solid #C0C0C0;
       color: #0000EE;
@@ -76,7 +88,7 @@
 
   /* END OF REDUNDANT PRIME CSS */
 
-    .intropic {width: 55%; height: 55%; border: 5px solid #555;}
+    .intropic {width: 55%; height: 55%; max-width: 400px; max-height: 450px; border: 5px solid #555;}
 
     .srvpic {width: 85%; height: 85%; border: 5px solid #555;}
 
@@ -132,6 +144,8 @@
     .commeasureleft {display: inline-block; width: 8%; text-align: right}
     .commeasureright {display: inline-block; width: 8%; text-align: left}
     .commeasurecenter {display: inline-block; width: 78%; text-align: center}
+
+    .commeasuremodule {font-family: 'Roboto Mono'; color: grey; font-size: 75%}
 
 /* SPECIAL RELIGION TABLE */
 
