@@ -125,9 +125,13 @@
 
     .resourcetitle {font-size: 150%}
     .resourcelevel{font-size: 120%; color: #333333; line-height: 80%}
-    .resourcelist {text-align: left; padding: 10px}
+    .resourcelist {
+        text-align: left; 
+        padding: 10px
+    }
     .resourcetype {font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .resource {padding-left: 10px}
+    .dot {font-size: 80%; color: #222222;}
 
     .level{font-size: 120%}
 
