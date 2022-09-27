@@ -41,6 +41,19 @@
     .left {text-align: left}
     .right {text-align: right}
 
+/* TOP DEED BANNER */
+
+    .deedlocation {
+        display: inline-block;
+        width: 32%;
+        font-family: 'Roboto Mono';
+        font-size: 65%;
+        color: grey;
+        top: -100px;
+    }
+
+    .center {text-align: center}
+
 /* MIDDLE STUFF */
 
     button {
@@ -57,6 +70,18 @@
       display: inline-block;
       font-size: 16px;
     }
+
+/* DIFFERENT TABS */
+
+    #Resources {
+        display:none;
+    }
+
+    #People {
+        display:none;
+    }
+
+/* END OF TABS */
 
 
     .roundaydiamond {font-size: 50%}
@@ -83,7 +108,8 @@
     .subprimepreheader {font-size: 100%; line-height: 110%}
     .subprimeheader {font-size: 130%; line-height: 110%}
 
-    .arealabel {font-family: 'Courier New'; font-size: 80%; color: grey;}
+    .arealabel {font-family: 'Roboto Mono'; font-size: 80%; color: grey;}
+    .arealabelsmall {font-family: 'Roboto Mono'; font-size: 70%; color: grey;}
 
   /* END OF REDUNDANT PRIME CSS */
 
@@ -142,7 +168,7 @@
 /* SCHEDULE TABLE */
 
     .scheduleleft {display: inline-block; width: 20%; text-align: top center; vertical-align: top}
-    .value {font-family: 'Roboto Mono'; color: grey; font-size: 85%;}
+    .value {font-family: 'Roboto Mono'; color: grey; font-size: 70%;}
     .valdiamond {font-size: 80%;}
 
     .scheduleright {display: inline-block; width: 74%; text-align: left}
