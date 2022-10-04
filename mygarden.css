@@ -166,7 +166,7 @@
     .inpcesmall{font-size: 85%; color: grey}
 
     .storytitle{font-size: 140%}
-    .story{text-align: left; line-height:160%; padding-left:10px; padding-right:10px}
+    .story{text-align: left; line-height:160%; padding-left:0px; padding-right:20px}
 
 /* SCHEDULE TABLE */
 
