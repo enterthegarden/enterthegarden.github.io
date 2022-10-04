@@ -165,6 +165,9 @@
     .inpcelabel{font-family: 'Roboto Mono'; font-size: 80%; color: grey}
     .inpcesmall{font-size: 85%; color: grey}
 
+    .storytitle{font-size: 140%}
+    .story{text-align: left; line-height:160%; padding-left:20px;}
+
 /* SCHEDULE TABLE */
 
     .scheduleleft {display: inline-block; width: 20%; text-align: top center; vertical-align: top}
