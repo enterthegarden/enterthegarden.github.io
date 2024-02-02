@@ -50,7 +50,33 @@ function Levenshtein(wordcount, linesize) {
 		"Africa's general language profile",
 		"Africa's micro-history",
 		"Africa's micro-political profile",
-		"Africa's cultural profile"
+		"Africa's cultural profile",
+
+		"Asia's hemisphere location",
+		"Asia's % of land",
+	    "Asia's main geographic features"
+	    "Asia's number of countries",
+	    "Asia's population size",
+	    "Asia's largest country",
+	    "Asia's most populous country",
+	    "Asia's key countries",
+	    "Asia's general language profile",
+	    "Asia's micro-history",
+	    "Asia's micro-political profile",
+	    "Asia's cultural profile",
+
+		"Oceania's hemisphere location",
+		"Oceania's % of land",
+	    "Oceania's main geographic feature"
+	    "Oceania's population size",
+	    "Oceania's largest country",
+	    "Oceania's most populous country",
+	    "Oceania's largest city",
+	    "Oceania's main cultural regions",
+	    "Oceania's general language profile",
+	    "Oceania's micro-history",
+	    "Oceania's micro-political profile",
+	    "Oceania's cultural profile"
 	];
 
 	let dictionaryLength = myDictionary.length;
