@@ -1,5 +1,5 @@
 
-function Levenshtein(wordcount, linesize) {
+function Levenshtein(questionCount, isRandom) {
 	
 	const myDictionary = [
 
@@ -62,46 +62,65 @@ function Levenshtein(wordcount, linesize) {
 	    "the date of Industrial Revolution",
 	    "the Industrial Revolution summed in a short phrase",
 	    "the key emerging technologies",
-	    "the key concerns for technology"
+	    "the key concerns for technology",
 
+	    "art's definition",
+	    "art's main types",
+	    "the earliest evidence of art",
+	    "the key purposes of art",
+	    "the steps of art creation",
+	    "the purpose of museums regarding art",
+	    "the key concerns for art",
+
+	    "language's definition",
+	    "language's age & origins",
+	    "the number of extant languages",
+	    "the extinction rate of languages",
+	    "the number of written languages",
+	    "the unique features of human language",
+	    "the five most spoken languages",
+	    "the key language evolution mechanisms",
+	    "the number of language families",
+	    "the key language learning period",
+	    "the key concerns for languages",
+
+	    "the definition of a human",
+	    "the time & place of origin of humans",
+	    "the lifestyle of humans before farming",
+	    "the date of development of farming",
+	    "the current global population",
+	    "how many humans have ever been born",
+	    "the distinguishing features of humans from other great apes",
+	    "the main social groups that humans form",
+	    "the genetic similarity of a random pair of humans",
+	    "the unique features of the human mind",
+	    "the year humans first visited the Moon"
 	];
 
-	let dictionaryLength = myDictionary.length;
-	let output = "";
 
-	if (wordcount < dictionaryLength) {
-		let start = getRndInteger(0, dictionaryLength - wordcount);
-
-		for (let i = 0; i < wordcount; i++) {
-			if ((i + 1) % linesize == 0) {
-				//output = output.concat("<a href=\"");
-				//output = output.concat("https://en.wiktionary.org/wiki/");
-				output = output.concat(myDictionary[start + i]);
-				//output = output.concat("#English\" target=\"blank\">");
-
-				//output = output.concat(myDictionary[start + i]);
-				//output = output.concat("</a>");
-
-				output = output.concat(" ");
-				output = output.concat("<br>");
-			} else {
-				//output = output.concat("<a href=\"");
-				//output = output.concat("https://en.wiktionary.org/wiki/");
-				output = output.concat(myDictionary[start + i]);
-				//output = output.concat("#English\" target=\"blank\">");
-
-				//output = output.concat(myDictionary[start + i]);
-				//output = output.concat("</a>");
-
-				output = output.concat(" ");
-			}
-			if (((i+1) % 1) == 0) {
-				output = output.concat("<br>");
-			}
-		}
+	if (isRandom == true) {
+		return getRandomSubarray(myDictionary, questionCount).join("<br><br>").concat("<br><br>");
+	} else {
+		return getRandomContiguousSubarray(myDictionary, questionCount).join("<br><br>").concat("<br><br>");
 	}
 
-	return output;
+}
+
+function getRandomContiguousSubarray(arr, size) {
+	var start = getRndInteger(0, arr.length - size - 1);
+	var end = start + size;
+	return arr.slice(start, end);
+}
+
+function getRandomSubarray(arr, size) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
 }
 
 
