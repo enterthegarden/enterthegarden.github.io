@@ -32,15 +32,9 @@
 
       <span id="output"></span>
 
-      <!--
-      <input type="text" id="wordcount" value="25" style="text-align: center">
-      <input type="text" id="linesize" value="5" style="text-align: center">
-      -->
-
-      <button onclick="document.getElementById('output').innerHTML = Levenshtein(10, 1)">Generate</button>
-      <!--
-      <button onclick="document.getElementById('output').innerHTML = Levenshtein(document.getElementById('wordcount').value, document.getElementById('linesize').value)">Generate</button>
-      -->
+      <button onclick="document.getElementById('output').innerHTML = Levenshtein(10, true)">Random</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onclick="document.getElementById('output').innerHTML = Levenshtein(10, false)">Adjacent</button>
 
 </div>
 
