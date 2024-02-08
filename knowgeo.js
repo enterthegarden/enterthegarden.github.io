@@ -4,7 +4,10 @@ function Levenshtein(questionCount, isRandom) {
 	const myDictionary = [
 
 		"North America's hemisphere location",
+		"North America's bordering entities",
 		"North America's % of land",
+
+		"North America's general geography",
 		"North America's key mountain ranges",
 		"North America's key rivers",
 		"North America's key lakes",
@@ -19,13 +22,17 @@ function Levenshtein(questionCount, isRandom) {
 		"North America's most populous country",
 
 		"North America's language profile",
-		"North America's micro-history",
-		"North America's micro-political profile",
-		"North America's micro-cultural profile",
+		"North America's history",
+		"North America's political profile",
+		"North America's cultural profile",
+
 
 
 		"South America's hemisphere location",
+		"South America's bordering entities",
 		"South America's % of land",
+
+		"North America's general geography",
 		"South America's key mountain ranges",
 		"South America's key rivers",
 		"South America's key lakes",
@@ -40,14 +47,17 @@ function Levenshtein(questionCount, isRandom) {
 		"South America's most populous country",
 
 		"South America's language profile",
-		"South America's micro-history",
-		"South America's micro-political profile",
-		"South America's micro-cultural profile",
+		"South America's history",
+		"South America's political profile",
+		"South America's cultural profile",
 
 
 
 		"Europe's hemisphere location",
+		"Europe's bordering entities",
 		"Europe's % of land",
+
+		"Europe's general geography",
 		"Europe's key mountain ranges",
 		"Europe's key rivers",
 		"Europe's key lakes",
@@ -62,14 +72,17 @@ function Levenshtein(questionCount, isRandom) {
 		"Europe's most populous country",
 
 		"Europe's language profile",
-		"Europe's micro-history",
-		"Europe's micro-political profile",
-		"Europe's micro-cultural profile",
+		"Europe's history",
+		"Europe's political profile",
+		"Europe's cultural profile",
 
 
 
 		"Africa's hemisphere location",
+		"Africa's bordering entities",
 		"Africa's % of land",
+
+		"Africa's general geography",
 		"Africa's key mountain ranges",
 		"Africa's key rivers",
 		"Africa's key lakes",
@@ -84,14 +97,17 @@ function Levenshtein(questionCount, isRandom) {
 		"Africa's most populous country",
 
 		"Africa's language profile",
-		"Africa's micro-history",
-		"Africa's micro-political profile",
-		"Africa's micro-cultural profile",
+		"Africa's history",
+		"Africa's political profile",
+		"Africa's cultural profile",
 
 
 
 		"Asia's hemisphere location",
+		"Asia's bordering entities",
 		"Asia's % of land",
+
+		"Asia's general geography",
 		"Asia's key mountain ranges",
 		"Asia's key rivers",
 		"Asia's key lakes",
@@ -106,14 +122,17 @@ function Levenshtein(questionCount, isRandom) {
 		"Asia's most populous country",
 
 		"Asia's language profile",
-		"Asia's micro-history",
-		"Asia's micro-political profile",
-		"Asia's micro-cultural profile",
+		"Asia's history",
+		"Asia's political profile",
+		"Asia's cultural profile",
 
 
 
 		"Oceania's hemisphere location",
+		"Oceania's bordering entities",
 		"Oceania's % of land",
+
+		"Oceania's general geography",
 		"Oceania's key mountain ranges",
 		"Oceania's key rivers",
 		"Oceania's key lakes",
@@ -128,9 +147,9 @@ function Levenshtein(questionCount, isRandom) {
 		"Oceania's most populous country",
 
 		"Oceania's language profile",
-		"Oceania's micro-history",
-		"Oceania's micro-political profile",
-		"Oceania's micro-cultural profile"
+		"Oceania's history",
+		"Oceania's political profile",
+		"Oceania's cultural profile"
 	];
 
 
