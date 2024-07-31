@@ -38,7 +38,7 @@
             transform: scale(1.1);
         }
         #audioName {
-            font-size: 54px;
+            font-size: 250%;
             font-weight: 700;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
@@ -48,15 +48,52 @@
             transform: translateX(-50%);
             text-align: center;
         }
+        #speedSlider {
+            width: 200px;
+            margin-top: 20px;
+            -webkit-appearance: none;
+            background: transparent;
+        }
+        #speedSlider::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: gray;
+            border-radius: 2px;
+        }
+        #speedSlider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+            margin-top: -6px;
+        }
+        #speedSlider::-moz-range-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: gray;
+            border-radius: 2px;
+        }
+        #speedSlider::-moz-range-thumb {
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: white;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div id="audioName"></div>
     <button id="playPauseBtn">▶</button>
+    <input type="range" id="speedSlider" min="1" max="2" step="0.1" value="1">
     <audio id="audioPlayer"></audio>
 
-    <script>
-        const audioFiles = ['antiquity of civilization',
+<script>
+    const audioFiles = ['antiquity of civilization',
 'art and AI',
 'atomic theory',
 'bipedalism',
@@ -152,65 +189,76 @@
 'types of technology',
 'units of life',
 'universe expansion'];
-        const audioPlayer = document.getElementById('audioPlayer');
-        const playPauseBtn = document.getElementById('playPauseBtn');
-        const audioNameDisplay = document.getElementById('audioName');
-        let isPlaying = false;
-        let fadeOutTimeout;
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const audioNameDisplay = document.getElementById('audioName');
+    const speedSlider = document.getElementById('speedSlider');
+    let isPlaying = false;
+    let fadeOutTimeout;
 
-        function playRandomAudio() {
-            const randomIndex = Math.floor(Math.random() * audioFiles.length);
-            const randomAudio = audioFiles[randomIndex];
-            audioPlayer.src = randomAudio + '.mp3';
-            
-            audioPlayer.onloadedmetadata = () => {
-                fadeInAudioName(randomAudio);
-                scheduleFadeOut();
-            };
+    function playRandomAudio() {
+        const randomIndex = Math.floor(Math.random() * audioFiles.length);
+        const randomAudio = audioFiles[randomIndex];
+        audioPlayer.src = randomAudio + '.mp3';
+        
+        audioPlayer.onloadedmetadata = () => {
+            fadeInAudioName(randomAudio);
+            scheduleFadeOut();
+            // Apply the current speed setting to the new audio file
+            audioPlayer.playbackRate = parseFloat(speedSlider.value);
+        };
 
+        audioPlayer.play();
+        isPlaying = true;
+        playPauseBtn.innerHTML = '❚❚';
+    }
+
+    function fadeInAudioName(audioName) {
+        audioNameDisplay.textContent = audioName;
+        audioNameDisplay.style.opacity = 0;
+        setTimeout(() => {
+            audioNameDisplay.style.opacity = 1;
+        }, 0);
+    }
+
+    function scheduleFadeOut() {
+        if (fadeOutTimeout) {
+            clearTimeout(fadeOutTimeout);
+        }
+        const duration = audioPlayer.duration;
+        fadeOutTimeout = setTimeout(() => {
+            audioNameDisplay.style.opacity = 0;
+        }, (duration - 0.5) * 1000);
+    }
+
+    function togglePlayPause() {
+        if (isPlaying) {
+            audioPlayer.pause();
+            playPauseBtn.innerHTML = '▶';
+        } else {
             audioPlayer.play();
-            isPlaying = true;
             playPauseBtn.innerHTML = '❚❚';
         }
+        isPlaying = !isPlaying;
+    }
 
-        function fadeInAudioName(audioName) {
-            audioNameDisplay.textContent = audioName;
-            audioNameDisplay.style.opacity = 0;
-            setTimeout(() => {
-                audioNameDisplay.style.opacity = 1;
-            }, 0);
+    playPauseBtn.addEventListener('click', () => {
+        if (audioPlayer.src) {
+            togglePlayPause();
+        } else {
+            playRandomAudio();
         }
+    });
 
-        function scheduleFadeOut() {
-            if (fadeOutTimeout) {
-                clearTimeout(fadeOutTimeout);
-            }
-            const duration = audioPlayer.duration;
-            fadeOutTimeout = setTimeout(() => {
-                audioNameDisplay.style.opacity = 0;
-            }, (duration - 0.5) * 1000);
-        }
+    audioPlayer.onended = playRandomAudio;
 
-        function togglePlayPause() {
-            if (isPlaying) {
-                audioPlayer.pause();
-                playPauseBtn.innerHTML = '▶';
-            } else {
-                audioPlayer.play();
-                playPauseBtn.innerHTML = '❚❚';
-            }
-            isPlaying = !isPlaying;
-        }
+    speedSlider.addEventListener('input', () => {
+        const speed = parseFloat(speedSlider.value);
+        audioPlayer.playbackRate = speed;
+    });
 
-        playPauseBtn.addEventListener('click', () => {
-            if (audioPlayer.src) {
-                togglePlayPause();
-            } else {
-                playRandomAudio();
-            }
-        });
-
-        audioPlayer.onended = playRandomAudio;
-    </script>
+    // Initialize playback speed when the page loads
+    audioPlayer.playbackRate = parseFloat(speedSlider.value);
+</script>
 </body>
 </html>
