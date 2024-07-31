@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Knowledge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100vh;
+            margin: 0;
+            padding-bottom: 20%;
+            box-sizing: border-box;
+        }
+        #playPauseBtn {
+            background-color: transparent;
+            border: 2px solid gray;
+            color: gray;
+            font-size: 44px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        #playPauseBtn:hover {
+            transform: scale(1.1);
+        }
+        #audioName {
+            font-size: 54px;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="audioName"></div>
+    <button id="playPauseBtn">▶</button>
+    <audio id="audioPlayer"></audio>
+
+    <script>
+        const audioFiles = ['antiquity of civilization',
+'art and AI',
+'atomic theory',
+'bipedalism',
+'cause of seasons',
+'chemical basis for life',
+'composition of atmosphere',
+'control of electricity',
+'day and night cycle',
+'definition of art',
+'definition of civilization',
+'definition of earth',
+'definition of human',
+'definition of language',
+'definition of life',
+'definition of religion',
+'definition of science',
+'definition of technology',
+'definition of universe',
+'diversity of life',
+'dna purpose',
+'earth surface water',
+'emerging technologies',
+'evolutionary theory',
+'exoplanets',
+'fire control',
+'first stars',
+'galaxy count',
+'genres and movements of art',
+'global economic systems',
+'global legal systems',
+'global political systems',
+'global risks',
+'heat death',
+'heliocentric model',
+'human genetic similarity',
+'human language specialness',
+'human population count',
+'human sociality',
+'human social structures',
+'human specialness',
+'issues of art',
+'issues of religion',
+'issues of science',
+'issues of technology',
+'lambda cdm model',
+'language count',
+'language evolution',
+'language families',
+'language learning period',
+'languages spoken or signed',
+'magnetosphere',
+'major religious populations',
+'mathematical modelling',
+'middle ages of civilization',
+'milky way star count',
+'modernity of civilization',
+'moon visit',
+'most spoken languages',
+'neolithic revolution',
+'number of religions',
+'number of sovereign states',
+'number of species',
+'origins of art',
+'origins of buddhism',
+'origins of christianity',
+'origins of civilization',
+'origins of earth',
+'origins of hinduism',
+'origins of humans',
+'origins of islam',
+'origins of language',
+'origins of life',
+'origins of religion',
+'origins of universe',
+'prescientific universe models',
+'purpose of art',
+'purpose of museums',
+'range of organisms',
+'relativity theory',
+'restoration of art',
+'rise of farming',
+'rise of writing',
+'science branches',
+'scientific method',
+'size of earth',
+'size of universe',
+'species extinct count',
+'stages of art',
+'structure of earth',
+'subliminal 3.html',
+'tectonic activity',
+'types of art',
+'types of technology',
+'units of life',
+'universe expansion'];
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const audioNameDisplay = document.getElementById('audioName');
+        let isPlaying = false;
+        let fadeOutTimeout;
+
+        function playRandomAudio() {
+            const randomIndex = Math.floor(Math.random() * audioFiles.length);
+            const randomAudio = audioFiles[randomIndex];
+            audioPlayer.src = randomAudio + '.mp3';
+            
+            audioPlayer.onloadedmetadata = () => {
+                fadeInAudioName(randomAudio);
+                scheduleFadeOut();
+            };
+
+            audioPlayer.play();
+            isPlaying = true;
+            playPauseBtn.innerHTML = '❚❚';
+        }
+
+        function fadeInAudioName(audioName) {
+            audioNameDisplay.textContent = audioName;
+            audioNameDisplay.style.opacity = 0;
+            setTimeout(() => {
+                audioNameDisplay.style.opacity = 1;
+            }, 0);
+        }
+
+        function scheduleFadeOut() {
+            if (fadeOutTimeout) {
+                clearTimeout(fadeOutTimeout);
+            }
+            const duration = audioPlayer.duration;
+            fadeOutTimeout = setTimeout(() => {
+                audioNameDisplay.style.opacity = 0;
+            }, (duration - 0.5) * 1000);
+        }
+
+        function togglePlayPause() {
+            if (isPlaying) {
+                audioPlayer.pause();
+                playPauseBtn.innerHTML = '▶';
+            } else {
+                audioPlayer.play();
+                playPauseBtn.innerHTML = '❚❚';
+            }
+            isPlaying = !isPlaying;
+        }
+
+        playPauseBtn.addEventListener('click', () => {
+            if (audioPlayer.src) {
+                togglePlayPause();
+            } else {
+                playRandomAudio();
+            }
+        });
+
+        audioPlayer.onended = playRandomAudio;
+    </script>
+</body>
+</html>
