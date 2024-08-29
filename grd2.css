@@ -240,7 +240,7 @@
     .waymenu {display: inline-block; width: 13%; text-align: center; line-height: 120%}
     .waymenusmall {font-size: 70%}
     .waymenucenter {line-height: 60%}
-    .bottommenu {display: inline-block; width: 32%; text-align: center}
+    .bottommenu {display: inline-block; width: 32%; text-align: center; font-size: 90%}
     .downloadmenu {display: inline-block; width: 45%; text-align: center}
     .bottomdownload {font-family: 'Roboto Mono'; line-height: 0.5; font-size: 75%; font-weight: 540; color: #666666}
     .icons {height: 22px; width: 22px}
