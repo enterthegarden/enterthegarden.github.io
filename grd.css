@@ -3,7 +3,7 @@
 
 /* GENERAL */
 
-    body {margin: auto; max-width: 800px; text-align: center; font-family: 'EB Garamond'; line-height: 150%; padding-top: 10px}
+    body {margin: auto; max-width: 800px; text-align: center; font-family: 'Helvetica'; line-height: 150%; padding-top: 10px}
 
     a {text-decoration: none}
     a:visited {text-decoration: none; color:#0000BB}
@@ -15,11 +15,34 @@
     .banner {line-height: 1.5; max-width: 800px; margin: auto}
 
 
+
+/* Suggestions */
+
+    body {
+        background-image: url('beach.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #specialgiant {
+        background-color: rgba(249, 236, 223); /* 229, 216, 183   245, 235, 220 */
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Ensures the text is readable */
+    .text-area h1, .text-area p {
+        color: #333; /* Darker text for better readability */
+    }
+
+
+
+
 /* (TOP) BANNER of VALUES */
 /* Health | Truth | Love | Beauty | Peace */
 
-    #the {font-size: 105%; color: grey; line-height:140%}
-    #garden {font-size: 180%; line-height:120%}
+    #the {font-family: 'EB Garamond'; font-size: 155%; color: grey; line-height:140%}
+    #garden {font-family: 'EB Garamond'; font-size: 280%; line-height:120%}
 
     .topmenu {display: inline-block; width: 19%; text-align: center}
 
