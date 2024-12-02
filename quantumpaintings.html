@@ -1,109 +1,394 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Quantum Paintings</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="../icons/lve.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
-<link rel="stylesheet" href="grd3.css">
+    <meta charset="UTF-8">
+    <title>Quantum Painting by Julia Pavlyuk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #fafafa;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #007BFF;
+        }
+
+        .nav a::after {
+            content: '';
+            height: 2px;
+            background-color: #007BFF;
+            width: 0%;
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero .slideshow-container {
+            height: 100%;
+            position: relative;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            animation: fade 15s infinite;
+        }
+
+        .hero .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            z-index: 1;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        /* Fade Animation */
+        @keyframes fade {
+            0% {opacity: 1;}
+            33% {opacity: 1;}
+            44% {opacity: 0;}
+            55% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 100px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: '';
+            height: 3px;
+            width: 50px;
+            background-color: #007BFF;
+            position: absolute;
+            left: 50%;
+            bottom: -10px;
+            transform: translateX(-50%);
+        }
+
+        .section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .section strong {
+            color: #007BFF;
+        }
+
+        /* List Styling */
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 35px;
+        }
+
+        .section li:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-image: url('checkmark.svg'); /* Replace with a checkmark icon */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background-color: #f1f1f1;
+            padding: 60px 20px;
+            text-align: center;
+            font-style: italic;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '“';
+            font-size: 80px;
+            color: rgba(0,0,0,0.1);
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        .testimonial::after {
+            content: '”';
+            font-size: 80px;
+            color: rgba(0,0,0,0.1);
+            position: absolute;
+            right: 20px;
+            bottom: -20px;
+        }
+
+        .testimonial p {
+            font-size: 22px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .testimonial span {
+            display: block;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Call to Action */
+        .cta {
+            background-image: url('cta-background.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,123,255,0.7);
+            z-index: 0;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: #fff;
+            color: #007BFF;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta a:hover {
+            background-color: #e9ecef;
+            color: #0056b3;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .section h2 {
+                font-size: 28px;
+            }
+
+            .section p, .section li {
+                font-size: 16px;
+            }
+
+            .testimonial p {
+                font-size: 18px;
+            }
+
+            .testimonial::before, .testimonial::after {
+                font-size: 60px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+
+            .cta p {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<div id="specialgiant">
 
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Order Now</a>
+    </div>
 
-<span id="the">Quantum</span>
-<br>
-<span id="garden">Paintings</span>
+    <!-- Hero Section with Slideshow -->
+    <div class="hero">
+        <div class="slideshow-container">
+            <img src="painting1.jpg" class="hero-image" style="animation-delay: 0s;">
+            <img src="painting2.jpg" class="hero-image" style="animation-delay: 5s;">
+            <img src="painting3.jpg" class="hero-image" style="animation-delay: 10s;">
+        </div>
+        <div class="content">
+            <h1>Quantum Painting</h1>
+            <p>Welcome to the world of quantum painting!</p>
+        </div>
+    </div>
 
-<br>
+    <!-- About Section -->
+    <div class="section" id="about">
+        <h2>About Quantum Painting</h2>
+        <p>I am <strong>Julia Pavlyuk</strong>, an artist and creator of a unique direction in art - quantum painting. My mission is to help you unlock your potential, achieve your goals, and transform your reality through the power of art.</p>
+        <p>Each of my paintings is a personal portal to the world of your possibilities. I create living canvases that resonate with your energy and help manifest your deepest desires.</p>
+        <p>Are you ready to open the door to the best version of your life?</p>
+    </div>
 
+    <!-- How It Works Section -->
+    <div class="section" id="how-it-works">
+        <h2>How It Works</h2>
+        <p><strong>Quantum painting</strong> is more than art. It's a bridge between your consciousness and the Universe. When I work on your painting, I immerse myself in a special state of flow. In this state, I capture the vibrations of your request and transfer them to the canvas. The result is a unique work of art tuned to your personal frequency.</p>
+        <p>My paintings can help you:</p>
+        <ul>
+            <li>Uncover hidden talents</li>
+            <li>Attract abundance into your life</li>
+            <li>Harmonize relationships</li>
+            <li>Achieve emotional balance</li>
+            <li>Accelerate the achievement of your goals</li>
+        </ul>
+        <p>The process:</p>
+        <ol>
+            <li>We have a consultation where you share your request.</li>
+            <li>I create your personal quantum painting.</li>
+            <li>You receive your unique portal to the desired reality.</li>
+            <li>By regularly contemplating the painting, you activate the transformation process.</li>
+        </ol>
+        <p>Let me be your guide to a world of limitless possibilities!</p>
+    </div>
 
+    <!-- Testimonials Section -->
+    <div class="testimonial" id="testimonials">
+        <p>"Since Julia created a quantum painting for me, my life has changed. I feel a surge of energy and inspiration every day!"</p>
+        <span>- Anna, 34 years old</span>
+    </div>
 
-<!--
+    <!-- Call to Action Section -->
+    <div class="cta" id="contact">
+        <h2>Order Your Quantum Painting Today</h2>
+        <p>Begin the journey to the best version of yourself!</p>
+        <a href="mailto:your-email@example.com">Get Started</a>
+    </div>
 
-<div class="banner">
-  <span class="topmenu">
-    <span class="love diamond">◆</span> <a href="values"><b>Values</b></a> <span class="love diamond">◆</span>
-  </span>
-  <span class="topmenu">
-    <span class="love diamond">◆</span> <a href="knowledge"><b>Knowledge</b></a> <span class="love diamond">◆</span>
-  </span>
-  <span class="topmenu">
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2023 Julia Pavlyuk. All rights reserved. | <a href="#privacy-policy">Privacy Policy</a>
+    </div>
 
-    <span class="love diamond">◆</span> <b>Skills</b> <span class="love diamond">◆</span>
-    <|!--
-    <span class="love diamond">◆</span> <a href="skills"><b>Skills</b></a> <span class="love diamond">◆</span>
-    --|>
-  </span>
-  <span class="topmenu">
-    <span class="love diamond">◆</span> <a href="routines"><b>Routines</b></a> <span class="love diamond">◆</span>
-  </span>
-  <span class="topmenu">
-    <span class="love diamond">◆</span> <a href="goals"><b>Goals</b></a> <span class="love diamond">◆</span>
-  </span>
-</div>
-<hr>
-
--->
-
-<br>
-Welcome to the world of quantum painting!
-<br>
-I am Julia Pavluk, an artist and creator of a unique direction in art - quantum painting. My mission is to help you unlock your potential, achieve your goals, and transform your reality through the power of art.
-<br>
-Each of my paintings is a personal portal to the world of your possibilities. I create living canvases that resonate with your energy and help manifest your deepest desires.
-<br>
-Are you ready to open the door to the best version of your life?
-
-<br>
-<br>
-
-<h3>About Quantum Painting</h3>
-
-Quantum painting is more than art. It's a bridge between your consciousness and the Universe.
-<br>
-When I work on your painting, I immerse myself in a special state of flow. In this state, I capture the vibrations of your request and transfer them to the canvas. The result is a unique work of art tuned to your personal frequency.
-<br>
-My paintings can help you:
-<br>
-<ul>
-<li>Uncover hidden talents
-<li>Attract abundance into your life
-<li>Harmonize relationships
-<li>Achieve emotional balance
-<li>Accelerate the achievement of your goals
-</ul>
-
-<img src="quantumpaintings.jpeg" alt="Quantum One" style="max-width: 50%;
-max-height: 50%">
-
-
-<br>
-<br>
-
-<!--
-
-<div class="banner bottomdownload">
-  <span class="downloadmenu">
-    <span><a href="../spPDF" title="Get this site as a pdf"><img src="../icons/PDFicon.svg" alt="PDF icon" class="icons"/></a>
-
-    </span>
-  </span>
-  <span class="downloadmenu">
-    <span><a href="../spTXT" title="Get this site as plain text"><img src="../icons/TXTicon.svg" alt="TXT icon" class="icons"/></a>
-
-    </span>
-  </span>
-</div>
-
--->
-<br>
-
-</div>
 </body>
 </html>
