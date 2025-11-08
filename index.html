@@ -13,47 +13,28 @@ body {
   padding: 16px;
   max-width: 800px;
   margin: 0 auto;
-  /* Add smooth transition for color changes */
   transition: background-color 0.3s, color 0.3s;
 }
+
+/* clickable section headers */
 h2 {
   border-bottom: 2px solid #333;
   padding-bottom: 8px;
   margin-top: 32px;
-  transition: border-bottom-color 0.3s;
-}
-h3 {
-  margin-top: 24px;
-  color: #555;
-  transition: color 0.3s;
-}
-p {
-  margin: 8px 0;
-}
-a {
-  color: #007bff; /* Added a default link color */
-  transition: color 0.3s;
-}
-
-/* --- Added for Dark Mode Toggle --- */
-
-#theme-toggle {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  background: none;
-  border: none;
   cursor: pointer;
-  font-size: 1.5rem; /* 24px */
-  z-index: 1000;
-  padding: 0;
-  line-height: 1;
-  /* Match text color to be unobtrusive */
-  color: inherit;
-  transition: color 0.3s;
 }
 
-/* Dark Mode Styles */
+/* collapsed section content */
+.section-content {
+  display: none;
+}
+
+/* show when expanded */
+.section-open + .section-content {
+  display: block;
+}
+
+/* Dark Mode */
 body.dark-mode {
   background-color: #222;
   color: #ddd;
@@ -65,15 +46,29 @@ body.dark-mode h3 {
   color: #999;
 }
 body.dark-mode a {
-  color: #8ab4f8; /* A light blue for links */
+  color: #8ab4f8;
 }
-/* --- End of Added Styles --- */
 
+/* toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  z-index: 1000;
+  padding: 0;
+  line-height: 1;
+  color: inherit;
+  transition: color 0.3s;
+}
 </style>
 </head>
-<body>
+<body class="dark-mode">
 
-<button id="theme-toggle" title="Toggle dark/light mode">🌙</button>
+<button id="theme-toggle" title="Toggle dark/light mode">☀️</button>
 
 <h1>The Garden</h1>
 
@@ -81,9 +76,13 @@ body.dark-mode a {
 <p><a href="https://www.youtube.com/@joshflynnvoice">My TV Channel</a></p>
 <p>My email: lexigenics "at" gmail "dot" com</p>
 <p>Computations and calculations.</p>
+<p>(Click on the sections)</p>
+
+<!-- Everything below stays exactly the same,
+     we just let JS auto-group and toggle it. -->
 
 <h2>LOGIC</h2>
-
+<div class="section-content">
 <h3>Propositional Equivalences</h3>
 <p>P ≡ P (Identity Law)</p>
 <p>P ∧ T ≡ P (Identity Law for Conjunction)</p>
@@ -144,9 +143,10 @@ body.dark-mode a {
 <p>A formula is universally valid (a tautology) if and only if it is Provable. (Completeness Theorem for Propositional Logic)</p>
 <p>No consistent axiomatic system capable of expressing arithmetic can Prove its own consistency. (Gödel's Second Incompleteness Theorem)</p>
 <p>There is no general algorithm to decide the truth of a first-order logic statement. (Church-Turing Undecidability Theorem)</p>
+</div>
 
 <h2>NUMBER THEORY</h2>
-
+<div class="section-content">
 <h3>Divisibility and GCD</h3>
 <p>a | b ⇔ ∃k∈Z: b = ak (Definition of Divisibility)</p>
 <p>If a|b and b|c, then a|c (Transitivity of Divisibility)</p>
@@ -226,9 +226,10 @@ body.dark-mode a {
 <p>∑*{p≤n} 1/p ~ ln(ln n)</p>
 <p>∏*{p≤n} (1−1/p) ~ e^(−γ)/ln n</p>
 <p>ζ(s) = ∑n^(-s) = ∏_p (1−p^(-s))^(-1) for Re(s)>1 (Euler Product)</p>
+</div>
 
 <h2>GEOMETRY</h2>
-
+<div class="section-content">
 <h3>Coordinate Geometry</h3>
 <p>d = √((x2 - x1)^2 + (y2 - y1)^2) (Euclidean distance)</p>
 <p>d = √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2) (Euclidean distance in 3D)</p>
@@ -292,11 +293,11 @@ body.dark-mode a {
 <p>V_cube = s^3 ; SA_cube = 6 s^2 (Cube — volume and surface area)</p>
 <p>V_prism = B · h ; V_pyramid = (1/3) B · h (Volume of prism and pyramid; B = base area)</p>
 <p>V_sphere = 4/3 π r^3 ; SA_sphere = 4 π r^2 ; V_cylinder = π r^2 h ; SA_cylinder = 2 π r (h + r) ; V_cone = 1/3 π r^2 h ; SA_cone = π r l + π r^2 (Key volumes & surface areas: sphere, cylinder, cone).</p>
-
+</div>
 
 
 <h2>TRIGONOMETRY</h2>
-
+<div class="section-content">
 <h3>Right Triangle Definitions:</h3>
 <p>sin(θ) = Opposite / Hypotenuse (Sine Definition)</p>
 <p>cos(θ) = Adjacent / Hypotenuse (Cosine Definition)</p>
@@ -380,9 +381,10 @@ body.dark-mode a {
 
 <h3>Euler's Formula:</h3>
 <p>e^(iθ) = cos(θ) + i sin(θ) (Euler's Formula)</p>
+</div>
 
 <h2>CALCULUS</h2>
-
+<div class="section-content">
 <h3>Limits</h3>
 <p>lim(x→a) k = k (Constant Limit Law)</p>
 <p>lim(x→a) x = a (Identity Limit Law)</p>
@@ -450,9 +452,10 @@ body.dark-mode a {
 <p>sin(x) = ∑(n=0 to ∞) (-1)^n·x^(2n+1)/(2n+1)! = x - x³/3! + x⁵/5! - ... (Sine Series)</p>
 <p>cos(x) = ∑(n=0 to ∞) (-1)^n·x^(2n)/(2n)! = 1 - x²/2! + x⁴/4! - ... (Cosine Series)</p>
 <p>ln(1+x) = ∑(n=1 to ∞) (-1)^(n+1)·x^n/n = x - x²/2 + x³/3 - ..., |x| < 1 (Logarithmic Series)</p>
+</div>
 
 <h2>DIFFERENTIAL EQUATIONS & DYNAMICS</h2>
-
+<div class="section-content">
 <h3>First-Order Ordinary Differential Equations (ODEs)</h3>
 <p>dy/dx = f(x, y) (General First-Order ODE)</p>
 <p>g(x)dx = h(y)dy (Separable Equation)</p>
@@ -520,11 +523,11 @@ body.dark-mode a {
 <p>f(x) = a0/2 + Σ[n=1, ∞](an*cos(nπx/L) + bn*sin(nπx/L)) (Fourier Series)</p>
 <p>an = (1/L) ∫[-L, L] f(x)cos(nπx/L)dx (Fourier Cosine Coefficient)</p>
 <p>bn = (1/L) ∫[-L, L] f(x)sin(nπx/L)dx (Fourier Sine Coefficient)</p>
-
+</div>
 
 
 <h2>VECTOR ALGEBRA</h2>
-
+<div class="section-content">
 <h3>Basic Vector Operations</h3>
 <p>a + b = b + a (Commutative Law for Vector Addition)</p>
 <p>(a + b) + c = a + (b + c) (Associative Law for Vector Addition)</p>
@@ -592,9 +595,10 @@ body.dark-mode a {
 <p>∇ × (∇f) = 0 (Curl of Gradient is Zero)</p>
 <p>∇ · (∇ × F) = 0 (Divergence of Curl is Zero)</p>
 <p>∇²f = ∇ · ∇f = ∂²f/∂x² + ∂²f/∂y² + ∂²f/∂z² (Laplacian)</p>
+</div>
 
 <h2>LINEAR ALGEBRA</h2>
-
+<div class="section-content">
 <h3>Vector Space Axioms</h3>
 <p>u + v = v + u (Commutativity of Vector Addition)</p>
 <p>(u + v) + w = u + (v + w) (Associativity of Vector Addition)</p>
@@ -683,8 +687,10 @@ body.dark-mode a {
 <p>A = Q*R (QR Decomposition)</p>
 <p>A = U*Σ*V^T (Singular Value Decomposition - SVD)</p>
 
-<h2>ABSTRACT ALGEBRA</h2>
+</div>
 
+<h2>ABSTRACT ALGEBRA</h2>
+<div class="section-content">
 <h3>Core Algebraic Structures</h3>
 <p>(G, *) is a Group (Associativity, ∃e Identity, ∃a⁻¹ Inverse)</p>
 <p>a * b = b * a (Commutative Law / Abelian Group)</p>
@@ -698,8 +704,8 @@ body.dark-mode a {
 <p>(a * b)⁻¹ = b⁻¹ * a⁻¹ (Inverse of a Product / Socks-Shoes Property)</p>
 <p>a * b = a * c ⇒ b = c (Left Cancellation Law)</p>
 <p>H ≤ G if a * b⁻¹ ∈ H for all a, b ∈ H (One-Step Subgroup Test)</p>
-<p><a> = { aⁿ | n ∈ ℤ } (Cyclic Subgroup generated by a)</p>
-<p>ord(a) = |<a>| (Order of an Element)</p>
+<p>⟨a⟩ = { aⁿ | n ∈ ℤ } (Cyclic Subgroup generated by a)</p>
+<p>ord(a) = |⟨a⟩| (Order of an Element)</p>
 <p>aH = { ah | h ∈ H } (Left Coset of H)</p>
 <p>|G| = |H| * |G:H| (Lagrange's Theorem)</p>
 <p>|G:H| = |G| / |H| (Index of a Subgroup)</p>
@@ -740,11 +746,10 @@ body.dark-mode a {
 <p>R is a UFD if factorization is unique (Unique Factorization Domain)</p>
 <p>R is PID ⇒ R is UFD (PID implies UFD)</p>
 <p>gcd(a, b) = sa + tb (Bézout's Identity)</p>
-
-
+</div>
 
 <h2>COMBINATORICS</h2>
-
+<div class="section-content">
 <h3>Fundamental Counting Principles</h3>
 <p>|A ∪ B| = |A| + |B| (Rule of Sum for disjoint sets)</p>
 <p>|A × B| = |A| ⋅ |B| (Rule of Product)</p>
@@ -772,7 +777,7 @@ body.dark-mode a {
 
 <h3>Inclusion-Exclusion, Derangements & Pigeonhole Principle</h3>
 <p>|A ∪ B| = |A| + |B| - |A ∩ B| (Inclusion-Exclusion for 2 sets)</p>
-<p>|∪_{i=1 to n} A_i| = Σ|A_i| - Σ_{i<j}|A_i ∩ A_j| + ... + (-1)^{n-1} |A_1 ∩ ... ∩ A_n| (Principle of Inclusion-Exclusion)</p>
+<p>|∪_{i=1 to n} A_i| = Σ|A_i| - Σ_{i < j }|A_i ∩ A_j| + ... + (-1)^{n-1} |A_1 ∩ ... ∩ A_n| (Principle of Inclusion-Exclusion)</p>
 <p>D_n = n! ⋅ Σ_{k=0 to n} ((-1)^k / k!) (Derangements / Subfactorial)</p>
 <p>D_n = (n-1) ⋅ (D_{n-1} + D_{n-2}) (Derangement Recurrence)</p>
 <p>D_n ≈ n! / e (Derangement Approximation)</p>
@@ -810,9 +815,10 @@ body.dark-mode a {
 
 <h3>Ramsey Theory</h3>
 <p>R(r, s) ≤ C(r+s-2, r-1) (Ramsey Number Upper Bound)</p>
+</div>
 
-<h2>PROBABILITY & STATISTICS</h2>
-
+<h2>PROBABILITY AND STATISTICS</h2>
+<div class="section-content">
 <h3>Basic Probability Axioms & Rules</h3>
 <p>P(∅) = 0, P(S) = 1 (Probability Axioms)</p>
 <p>0 ≤ P(A) ≤ 1 (Nonnegativity / Bounds)</p>
@@ -878,21 +884,22 @@ body.dark-mode a {
 <p>SE(X̄) = σ / √n ; estimated SE = s / √n (Standard Error of the Mean)</p>
 <p>Confidence Intervals: X̄ ± z_{α/2}·(σ/√n) (σ known) ; X̄ ± t_{α/2,n−1}·(s/√n) (σ unknown) (Confidence Intervals)</p>
 <p>Likelihood L(θ) = Π_i f(x_i; θ) ; θ̂_MLE = argmax_θ L(θ) ; Fisher Information I(θ) = −E[∂^2 log f/∂θ^2] ; Var(θ̂) ≥ 1/(n I(θ)) (Likelihood, MLE, Fisher Info, Cramér–Rao)</p>
-
+</div>
 
 <script>
-  const themeToggle = document.getElementById('theme-toggle');
-  
-  themeToggle.addEventListener('click', () => {
-    // Toggle the .dark-mode class on the <body>
-    document.body.classList.toggle('dark-mode');
-    
-    // Check if dark mode is now active
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    
-    // Change the button icon
-    themeToggle.textContent = isDarkMode ? '☀️' : '🌙';
-  });
+// Dark mode toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.onclick = () => {
+  document.body.classList.toggle('dark-mode');
+  themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+};
+
+// Collapsible sections
+document.querySelectorAll('h2').forEach(h2 => {
+  h2.onclick = () => {
+    h2.classList.toggle('section-open');
+  };
+});
 </script>
 
 </body>
