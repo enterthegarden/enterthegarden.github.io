@@ -1,97 +1,837 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Garden</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garden</title>
 <link href="../icons/lve.ico" rel="shortcut icon" type="image/x-icon" />
-<link href="https://fonts.googleapis.com/css?family=EB Garamond" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto Mono" rel="stylesheet">
-<link rel="stylesheet" href="grd3.css">
+<style>
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+  margin-top: 32px;
+}
+h3 {
+  margin-top: 24px;
+  color: #555;
+}
+p {
+  margin: 8px 0;
+}
+</style>
 </head>
-
 <body>
-<div id="specialgiant">
+
+<h1>The Garden</h1>
+
+<p>Josh Flynn</p>
+<p><a href="https://www.youtube.com/@joshflynnvoice">My TV Channel</a></p>
+<p>My email: lexigenics "at" gmail "dot" com</p>
+<p>Computations and calculations.</p>
+
+<h2>LOGIC</h2>
+
+<h3>Propositional Equivalences</h3>
+<p>P ≡ P (Identity Law)</p>
+<p>P ∧ T ≡ P (Identity Law for Conjunction)</p>
+<p>P ∨ F ≡ P (Identity Law for Disjunction)</p>
+<p>P ∧ F ≡ F (Domination Law for Conjunction)</p>
+<p>P ∨ T ≡ T (Domination Law for Disjunction)</p>
+<p>P ∧ P ≡ P (Idempotent Law for Conjunction)</p>
+<p>P ∨ P ≡ P (Idempotent Law for Disjunction)</p>
+<p>¬(¬P) ≡ P (Double Negation Law)</p>
+<p>P ∧ Q ≡ Q ∧ P (Commutative Law for Conjunction)</p>
+<p>P ∨ Q ≡ Q ∨ P (Commutative Law for Disjunction)</p>
+<p>(P ∧ Q) ∧ R ≡ P ∧ (Q ∧ R) (Associative Law for Conjunction)</p>
+<p>(P ∨ Q) ∨ R ≡ P ∨ (Q ∨ R) (Associative Law for Disjunction)</p>
+<p>P ∧ (Q ∨ R) ≡ (P ∧ Q) ∨ (P ∧ R) (Distributive Law of Conjunction over Disjunction)</p>
+<p>P ∨ (Q ∧ R) ≡ (P ∨ Q) ∧ (P ∨ R) (Distributive Law of Disjunction over Conjunction)</p>
+<p>¬(P ∧ Q) ≡ ¬P ∨ ¬Q (De Morgan's Law)</p>
+<p>¬(P ∨ Q) ≡ ¬P ∧ ¬Q (De Morgan's Law)</p>
+<p>P ∧ (P ∨ Q) ≡ P (Absorption Law)</p>
+<p>P ∨ (P ∧ Q) ≡ P (Absorption Law)</p>
+<p>P ∧ ¬P ≡ F (Law of Non-Contradiction)</p>
+<p>P ∨ ¬P ≡ T (Law of Excluded Middle)</p>
+
+<h3>Rules of Inference for Propositional Logic</h3>
+<p>P, P → Q ∴ Q (Modus Ponens)</p>
+<p>¬Q, P → Q ∴ ¬P (Modus Tollens)</p>
+<p>P → Q, Q → R ∴ P → R (Hypothetical Syllogism)</p>
+<p>P ∨ Q, ¬P ∴ Q (Disjunctive Syllogism)</p>
+<p>P ∴ P ∨ Q (Addition)</p>
+<p>P ∧ Q ∴ P (Simplification)</p>
+<p>P, Q ∴ P ∧ Q (Conjunction)</p>
+<p>P → Q, R → S, P ∨ R ∴ Q ∨ S (Constructive Dilemma)</p>
+<p>P → Q, R → S, ¬Q ∨ ¬S ∴ ¬P ∨ ¬R (Destructive Dilemma)</p>
+
+<h3>Implications, Biconditionals, and Quantifiers</h3>
+<p>P → Q ≡ ¬P ∨ Q (Material Implication)</p>
+<p>P → Q ≡ ¬Q → ¬P (Contraposition)</p>
+<p>¬(p → Q) ≡ P ∧ ¬Q (Negation of Implication)</p>
+<p>(p ∧ Q) → R ≡ P → (Q → R) (Exportation Law)</p>
+<p>P ↔ Q ≡ (P → Q) ∧ (Q → P) (Definition of Biconditional)</p>
+<p>P ↔ Q ≡ (P ∧ Q) ∨ (¬P ∧ ¬Q) (Alternative Biconditional)</p>
+<p>∀x P(x) ∴ P(c) (Universal Instantiation)</p>
+<p>P(c) for an arbitrary c ∴ ∀x P(x) (Universal Generalization)</p>
+<p>P(c) for some c ∴ ∃x P(x) (Existential Generalization)</p>
+<p>∃x P(x) ∴ P(c) for some specific c (Existential Instantiation)</p>
+
+<h3>Quantifier Equivalences and Rules</h3>
+<p>¬∀x P(x) ≡ ∃x ¬P(x) (Quantifier Negation)</p>
+<p>¬∃x P(x) ≡ ∀x ¬P(x) (Quantifier Negation)</p>
+<p>∀x (P(x) ∧ Q(x)) ≡ ∀x P(x) ∧ ∀x Q(x) (Distribution of Universal over Conjunction)</p>
+<p>∃x (P(x) ∨ Q(x)) ≡ ∃x P(x) ∨ ∃x Q(x) (Distribution of Existential over Disjunction)</p>
+<p>∀x P(x) ∨ ∀x Q(x) → ∀x (P(x) ∨ Q(x)) (Note: Converse is not valid)</p>
+<p>∃x (P(x) ∧ Q(x)) → ∃x P(x) ∧ ∃x Q(x) (Note: Converse is not valid)</p>
+<p>∀x ∀y P(x, y) ≡ ∀y ∀x P(x, y) (Order of Universal Quantifiers)</p>
+<p>∃x ∃y P(x, y) ≡ ∃y ∃x P(x, y) (Order of Existential Quantifiers)</p>
+
+<h3>Meta-Logical Theorems</h3>
+<p>If Σ ⊨ φ then Σ ⊢ φ (Gödel's Completeness Theorem for First-Order Logic)</p>
+<p>A formula is universally valid (a tautology) if and only if it is Provable. (Completeness Theorem for Propositional Logic)</p>
+<p>No consistent axiomatic system capable of expressing arithmetic can Prove its own consistency. (Gödel's Second Incompleteness Theorem)</p>
+<p>There is no general algorithm to decide the truth of a first-order logic statement. (Church-Turing Undecidability Theorem)</p>
+
+<h2>NUMBER THEORY</h2>
+
+<h3>Divisibility and GCD</h3>
+<p>a | b ⇔ ∃k∈Z: b = ak (Definition of Divisibility)</p>
+<p>If a|b and b|c, then a|c (Transitivity of Divisibility)</p>
+<p>If a|b and a|c, then a|(bx + cy) ∀x,y∈Z</p>
+<p>∀a,b∈Z, b>0, ∃!q,r: a = bq + r, 0≤r (Division Algorithm)</p>
+<p>gcd(a,b) = largest d such that d|a and d|b</p>
+<p>lcm(a,b) = smallest m>0 such that a|m and b|m</p>
+<p>gcd(a,b) × lcm(a,b) = |ab|</p>
+<p>gcd(a,b) = gcd(b, a mod b) (Euclidean Algorithm)</p>
+<p>If d = gcd(a,b), then ∃x,y∈Z: ax + by = d (Bézout's Identity)</p>
+<p>ax + by = d has solutions ⇔ gcd(a,b)|d</p>
+
+<h3>Prime Numbers and Factorization</h3>
+<p>p is prime ⇔ (p|ab ⇒ p|a or p|b) (Euclid's Lemma)</p>
+<p>There are infinitely many primes (Euclid's Theorem)</p>
+<p>Every n>1 factors uniquely as product of primes (Fundamental Theorem of Arithmetic)</p>
+
+<h3>Congruences and Modular Arithmetic</h3>
+<p>a ≡ b mod n ⇔ n|(a−b) (Definition of Congruence)</p>
+<p>a ≡ b mod n and c ≡ d mod n ⇒ a+c ≡ b+d mod n</p>
+<p>a ≡ b mod n and c ≡ d mod n ⇒ ac ≡ bd mod n</p>
+<p>a ≡ b mod n ⇒ a^k ≡ b^k mod n ∀k≥1</p>
+<p>ax ≡ ay (mod n) ⇒ x ≡ y (mod n/d) where d = gcd(a,n). (Modular Cancellation Law)</p>
+<p>gcd(a,n)=1 ⇒ ∃b: ab ≡ 1 mod n (Modular Inverse)</p>
+<p>gcd(a,n)=1 ⇒ a^ϕ(n) ≡ 1 mod n (Euler's Theorem)</p>
+<p>p prime, p∤a ⇒ a^(p−1) ≡ 1 mod p (Fermat's Little Theorem)</p>
+<p>p prime ⇒ a^p ≡ a mod p ∀a∈Z</p>
+<p>(p−1)! ≡ −1 mod p for prime p (Wilson's Theorem)</p>
+<p>(a + b)^p ≡ a^p + b^p (mod p). (Freshman's Dream modulo p)</p>
+<p>x≡a mod m, x≡b mod n, gcd(m,n)=1 ⇒ ∃!x mod mn (Chinese Remainder Theorem)</p>
+
+<h3>Multiplicative Functions</h3>
+<p>f multiplicative ⇔ f(m n) = f(m) f(n) when gcd(m,n)=1. (Multiplicative Function)</p>
+<p>f completely multiplicative ⇔ f(m n) = f(m) f(n) for all m,n. (Completely Multiplicative)</p>
+<p>ϕ(p^k) = p^k − p^(k−1) for prime p</p>
+<p>gcd(m,n)=1 ⇒ ϕ(mn) = ϕ(m)ϕ(n)</p>
+<p>∑*{d|n} ϕ(d) = n</p>
+<p>φ(n) = n ∏*{p|n} (1 − 1/p). (Euler's Totient Product Formula)</p>
+<p>σ(n) = ∑*{d|n} d (Sum of Divisors)</p>
+<p>τ(n) = ∑*{d|n} 1 (Number of Divisors)</p>
+<p>τ(n) = number of divisors = ∏ (α_i + 1) for n = ∏ p_i^{α_i}. (Divisor Count Formula)</p>
+<p>σ(n) = sum of divisors = ∏ (p_i^{α_i+1} − 1)/(p_i − 1). (Sum-of-Divisors Formula)</p>
+<p>μ(n) = 1 if n=1; 0 if p²|n; (−1)^k if n=p₁⋯pₖ (Möbius Function)</p>
+<p>∑*{d|n} μ(d) = 0 for n>1</p>
+<p>∑*{d|n} μ(d)(n/d) = ϕ(n) (Möbius Inversion)</p>
+<p>(f * g)(n) = ∑_{d|n} f(d) g(n/d). (Dirichlet Convolution)</p>
+<p>If g(n) = ∑*{d|n} f(d) then f(n) = ∑*{d|n} μ(d) g(n/d). (Möbius Inversion Formula)</p>
+
+<h3>Groups and Orders</h3>
+<p>(Z/nZ)* has size ϕ(n) (Group of Units)</p>
+<p>(Z/pZ)* is cyclic for prime p (Primitive Root Theorem)</p>
+<p>If g is primitive mod p then every nonzero residue ≡ g^k for some k. (Generator Property)</p>
+<p>gcd(a,n)=1 ⇒ ordₙ(a)|ϕ(n)</p>
+<p>n|a^k − 1 ⇒ ordₙ(a)|k</p>
+
+<h3>Special Equations and Theorems</h3>
+<p>x = k(m²−n²), y = k(2mn), z = k(m²+n²) (Pythagorean Triples)</p>
+<p>p = x² + y² ⇔ p=2 or p≡1 mod 4 (Two Squares Theorem)</p>
+<p>x² − Dy² = 1 has infinitely many solutions for non-square D (Pell's Equation)</p>
+<p>xⁿ + yⁿ = zⁿ has no positive integer solutions for n>2 (Fermat's Last Theorem)</p>
+<p>σ(n) = 2n (Definition of Perfect Number)</p>
+<p>σ(n) = 2n ⇔ n is perfect (even perfect numbers given by n = 2^{p−1}(2^p − 1) when 2^p −1 is prime). (Perfect Number — Euclid–Euler)</p>
+<p>Every natural n is sum of four squares. (Lagrange's Four-Square Theorem)</p>
+
+<h3>Quadratic Residues and Reciprocity</h3>
+<p>∃x: x² ≡ a mod p ⇔ a^((p−1)/2) ≡ 1 mod p (Euler's Criterion)</p>
+<p>(a/p) = 1 if solvable, −1 if not, 0 if p|a (Legendre Symbol)</p>
+<p>(ab/p) = (a/p)(b/p)</p>
+<p>(a/p) = (p/a)(−1)^((a−1)(p−1)/4) (Quadratic Reciprocity)</p>
+<p>(−1/p) = (−1)^((p−1)/2)</p>
+<p>(2/p) = (−1)^((p²−1)/8)</p>
+<p>Jacobi symbol (a/n) multiplicative and equals ∏ (a/p_i) over prime factors p_i of n but (a/n)=1 does not guarantee solvability when n composite. (Jacobi Symbol)</p>
+
+<h3>Prime Distribution and Zeta</h3>
+<p>π(n) ~ n/ln(n) (Prime Number Theorem)</p>
+<p>π(x) ~ x / log x; p_n ~ n log n. (Prime Number Theorem / nth prime asymptotic)</p>
+<p>∑*{p≤n} 1/p ~ ln(ln n)</p>
+<p>∏*{p≤n} (1−1/p) ~ e^(−γ)/ln n</p>
+<p>ζ(s) = ∑n^(-s) = ∏_p (1−p^(-s))^(-1) for Re(s)>1 (Euler Product)</p>
+
+<h2>GEOMETRY</h2>
+
+<h3>Coordinate Geometry</h3>
+<p>d = √((x2 - x1)^2 + (y2 - y1)^2) (Euclidean distance)</p>
+<p>d = √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2) (Euclidean distance in 3D)</p>
+<p>M = ((x1 + x2)/2, (y1 + y2)/2) (Midpoint formula)</p>
+<p>m = (y2 - y1)/(x2 - x1) (Slope of a line)</p>
+<p>y - y1 = m(x - x1) (Point–slope form of a line)</p>
+<p>y = mx + b (Slope–intercept form)</p>
+<p>Ax + By + C = 0 (Standard form of a line)</p>
+<p>d = |Ax + By + C| / √(A^2 + B^2) (Distance from point to line)</p>
+
+<h3>Circles</h3>
+<p>(x - h)^2 + (y - k)^2 = r^2 (Equation of a circle)</p>
+<p>C = 2πr (Circumference of a circle)</p>
+<p>A = π r^2 (Area of a circle)</p>
+<p>L = r θ (Arc length, θ in radians) (Arc length — radians)</p>
+<p>A_sector = 1/2 r^2 θ (Sector area, θ in radians) (Sector area — radians)</p>
+<p>chord = 2 r sin(θ/2) (Chord length subtending angle θ at center)</p>
+<p>∠inscribed = 1/2 ∠central (Inscribed-angle theorem)</p>
+<p>tangent ⟂ radius at point of contact (Tangent–radius theorem)</p>
+<p>(external secant) PA·PB = PC·PD ; (tangent) (PT)^2 = PA·PB (Power of a point)</p>
+<p>Angle subtended by diameter = 90° (Thales' theorem)</p>
+
+<h3>Triangles</h3>
+<p>a^2 + b^2 = c^2 (Pythagorean theorem)</p>
+<p>45°–45°–90°: sides 1 : 1 : √2 ; 30°–60°–90°: sides 1 : √3 : 2 (Special right triangles)</p>
+<p>c^2 = a^2 + b^2 - 2ab cos C (Law of cosines)</p>
+<p>a / sin A = b / sin B = c / sin C = 2R (Law of sines)</p>
+<p>A = 1/2 b h (Triangle area — base × height / 2)</p>
+<p>A = 1/2 a b sin C (Triangle area — trig form)</p>
+<p>A = √(s(s - a)(s - b)(s - c)), s = (a + b + c)/2 (Heron's formula)</p>
+<p>a + b > c, b + c > a, c + a > b (Triangle inequality)</p>
+<p>m_a = 1/2 √(2b^2 + 2c^2 - a^2) (Median length — Apollonius)</p>
+<p>G = ((x1 + x2 + x3)/3, (y1 + y2 + y3)/3) (Centroid coordinates)</p>
+<p>R = abc / (4A) (Circumradius of a triangle)</p>
+<p>r = A / s (Inradius of a triangle; s = semiperimeter)</p>
+<p>OI^2 = R(R - 2r) (Euler's triangle formula relating circumcenter & incenter)</p>
+<p>AB/AC = DB/DC (Angle-bisector theorem; internal bisector dividing opposite side)</p>
+<p>G, O, H are collinear (Euler line) (Euler line — triangle centers)</p>
+
+<h3>Polygons and Similarity</h3>
+<p>A = 1/2 |Σ_{i=1..n} (x_i y_{i+1} - x_{i+1} y_i)| (Shoelace formula for polygon area)</p>
+<p>Sum interior angles of n-gon = (n - 2) × 180° (Polygon interior angle sum)</p>
+<p>A_regular = 1/2 · ap (Area of regular polygon; a = apothem, p = perimeter)</p>
+<p>Interior angle (regular n-gon) = (n - 2)·180° / n (Regular polygon interior angle)</p>
+<p>Similarity scaling: linear scale k ⇒ lengths ×k, areas ×k^2, volumes ×k^3 (Similarity scaling laws)</p>
+
+<h3>Conic Sections and Transformations</h3>
+<p>Area(parallelogram) = |u × v| (2D determinant / magnitude of cross product) (Vector area)</p>
+<p>(x - h)^2 = 4p(y - k) ; (x - h)^2/a^2 + (y - k)^2/b^2 = 1 ; (x - h)^2/a^2 - (y - k)^2/b^2 = 1 (Standard forms of parabola, ellipse, hyperbola)</p>
+<p>e = c / a (Eccentricity of ellipse/hyperbola; conic eccentricity)</p>
+<p>Rotation (2D): [x'] = [ cos θ -sin θ ; sin θ cos θ ] [x] (2×2 rotation matrix)</p>
+<p>Angle of incidence = angle of reflection (Law of reflection)</p>
+
+<h3>Quadrilaterals</h3>
+<p>A_parallelogram = base · height (Area of a parallelogram)</p>
+<p>A_trapezoid = 1/2 · (b1 + b2) · h (Area of a trapezoid)</p>
+<p>A_rhombus = 1/2 · d1 · d2 (Area of a rhombus via diagonals)</p>
+<p>d_rect = √(l^2 + w^2) (Diagonal of a rectangle)</p>
+
+<h3>3D Geometry</h3>
+<p>V_cube = s^3 ; SA_cube = 6 s^2 (Cube — volume and surface area)</p>
+<p>V_prism = B · h ; V_pyramid = (1/3) B · h (Volume of prism and pyramid; B = base area)</p>
+<p>V_sphere = 4/3 π r^3 ; SA_sphere = 4 π r^2 ; V_cylinder = π r^2 h ; SA_cylinder = 2 π r (h + r) ; V_cone = 1/3 π r^2 h ; SA_cone = π r l + π r^2 (Key volumes & surface areas: sphere, cylinder, cone).</p>
 
 
-<span id="the">The</span>
-<br>
-<span id="garden">Garden</span>
 
-<br>
+<h2>TRIGONOMETRY</h2>
 
-<hr>
+<h3>Right Triangle Definitions:</h3>
+<p>sin(θ) = Opposite / Hypotenuse (Sine Definition)</p>
+<p>cos(θ) = Adjacent / Hypotenuse (Cosine Definition)</p>
+<p>tan(θ) = Opposite / Adjacent (Tangent Definition)</p>
+
+<h3>Unit Circle Definitions:</h3>
+<p>sin(θ) = y-coordinate (Unit Circle Sine)</p>
+<p>cos(θ) = x-coordinate (Unit Circle Cosine)</p>
+<p>tan(θ) = sin(θ) / cos(θ) (Tangent Quotient Identity)</p>
+
+<h3>Reciprocal Identities:</h3>
+<p>csc(θ) = 1 / sin(θ) (Cosecant)</p>
+<p>sec(θ) = 1 / cos(θ) (Secant)</p>
+<p>cot(θ) = 1 / tan(θ) (Cotangent)</p>
+
+<h3>Pythagorean Identities:</h3>
+<p>sin²(θ) + cos²(θ) = 1 (Fundamental Pythagorean Identity)</p>
+<p>1 + tan²(θ) = sec²(θ) (Pythagorean Identity)</p>
+<p>1 + cot²(θ) = csc²(θ) (Pythagorean Identity)</p>
+
+<h3>Periodicity Identities:</h3>
+<p>sin(θ + 2π) = sin(θ) (Periodicity of Sine)</p>
+<p>cos(θ + 2π) = cos(θ) (Periodicity of Cosine)</p>
+<p>tan(θ + π) = tan(θ) (Periodicity of Tangent)</p>
+
+<h3>Even-Odd Identities:</h3>
+<p>sin(-θ) = -sin(θ) (Odd Function)</p>
+<p>cos(-θ) = cos(θ) (Even Function)</p>
+<p>tan(-θ) = -tan(θ) (Odd Function)</p>
+
+<h3>Co-function Identities:</h3>
+<p>sin(π/2 - θ) = cos(θ) (Cofunction Identity)</p>
+<p>cos(π/2 - θ) = sin(θ) (Cofunction Identity)</p>
+<p>tan(π/2 - θ) = cot(θ) (Cofunction Identity)</p>
+
+<h3>Angle Sum Identities:</h3>
+<p>sin(α + β) = sin(α)cos(β) + cos(α)sin(β) (Sine Addition Formula)</p>
+<p>cos(α + β) = cos(α)cos(β) - sin(α)sin(β) (Cosine Addition Formula)</p>
+<p>tan(α + β) = (tan(α) + tan(β)) / (1 - tan(α)tan(β)) (Tangent Addition Formula)</p>
+
+<h3>Angle Difference Identities:</h3>
+<p>sin(α - β) = sin(α)cos(β) - cos(α)sin(β) (Sine Subtraction Formula)</p>
+<p>cos(α - β) = cos(α)cos(β) + sin(α)sin(β) (Cosine Subtraction Formula)</p>
+<p>tan(α - β) = (tan(α) - tan(β)) / (1 + tan(α)tan(β)) (Tangent Subtraction Formula)</p>
+
+<h3>Double Angle Formulas:</h3>
+<p>sin(2θ) = 2sin(θ)cos(θ) (Sine Double Angle)</p>
+<p>cos(2θ) = cos²(θ) - sin²(θ) (Cosine Double Angle)</p>
+<p>cos(2θ) = 2cos²(θ) - 1 (Cosine Double Angle)</p>
+<p>cos(2θ) = 1 - 2sin²(θ) (Cosine Double Angle)</p>
+<p>tan(2θ) = 2tan(θ) / (1 - tan²(θ)) (Tangent Double Angle)</p>
+
+<h3>Half Angle Formulas:</h3>
+<p>sin(θ/2) = ±√((1 - cos(θ))/2) (Sine Half Angle)</p>
+<p>cos(θ/2) = ±√((1 + cos(θ))/2) (Cosine Half Angle)</p>
+<p>tan(θ/2) = sin(θ) / (1 + cos(θ)) (Tangent Half Angle)</p>
+
+<h3>Power Reducing Formulas:</h3>
+<p>sin²(θ) = (1 - cos(2θ))/2 (Power Reduction)</p>
+<p>cos²(θ) = (1 + cos(2θ))/2 (Power Reduction)</p>
+
+<h3>Product-to-Sum Formulas:</h3>
+<p>sin(α)sin(β) = ½[cos(α - β) - cos(α + β)] (Product-to-Sum)</p>
+<p>cos(α)cos(β) = ½[cos(α - β) + cos(α + β)] (Product-to-Sum)</p>
+<p>sin(α)cos(β) = ½[sin(α + β) + sin(α - β)] (Product-to-Sum)</p>
+
+<h3>Sum-to-Product Formulas:</h3>
+<p>sin(α) + sin(β) = 2sin((α + β)/2)cos((α - β)/2) (Sum-to-Product)</p>
+<p>sin(α) - sin(β) = 2cos((α + β)/2)sin((α - β)/2) (Sum-to-Product)</p>
+<p>cos(α) + cos(β) = 2cos((α + β)/2)cos((α - β)/2) (Sum-to-Product)</p>
+<p>cos(α) - cos(β) = -2sin((α + β)/2)sin((α - β)/2) (Sum-to-Product)</p>
+
+<h3>Laws of Triangles:</h3>
+<p>a/sin(A) = b/sin(B) = c/sin(C) = 2R (Law of Sines)</p>
+<p>a² = b² + c² - 2bc cos(A) (Law of Cosines)</p>
+<p>Area = ½ ab sin(C) (Triangle Area Formula)</p>
+<p>Area = √[s(s - a)(s - b)(s - c)] (Heron's Formula)</p>
+
+<h3>Inverse Trigonometric Relations:</h3>
+<p>arcsin(x) + arccos(x) = π/2 (Inverse Complementary Identity)</p>
+
+<h3>Euler's Formula:</h3>
+<p>e^(iθ) = cos(θ) + i sin(θ) (Euler's Formula)</p>
+
+<h2>CALCULUS</h2>
+
+<h3>Limits</h3>
+<p>lim(x→a) k = k (Constant Limit Law)</p>
+<p>lim(x→a) x = a (Identity Limit Law)</p>
+<p>lim(x→a) [f(x) + g(x)] = lim(x→a) f(x) + lim(x→a) g(x) (Sum Law for Limits)</p>
+<p>lim(x→a) [f(x) · g(x)] = lim(x→a) f(x) · lim(x→a) g(x) (Product Law for Limits)</p>
+<p>lim(x→a) [f(x)/g(x)] = lim(x→a) f(x) / lim(x→a) g(x), if lim(x→a) g(x) ≠ 0 (Quotient Law for Limits)</p>
+<p>lim(x→a) [c·f(x)] = c·lim(x→a) f(x) (Constant Multiple Law for Limits)</p>
+<p>If g(x) ≤ f(x) ≤ h(x) and lim(x→a) g(x) = lim(x→a) h(x) = L, then lim(x→a) f(x) = L (Squeeze Theorem)</p>
+<p>lim(x→0) sin(x)/x = 1 (Standard Trigonometric Limit)</p>
+<p>lim(x→∞) (1 + 1/x)^x = e (Definition of e)</p>
+<p>f is continuous at a if lim(x→a) f(x) = f(a) (Definition of Continuity)</p>
+<p>If f is continuous on [a,b] and k is between f(a) and f(b), then there exists c in (a,b) such that f(c) = k (Intermediate Value Theorem)</p>
+
+<h3>Derivatives</h3>
+<p>f'(x) = lim(h→0) [f(x+h) - f(x)]/h (Definition of Derivative)</p>
+<p>d/dx[c] = 0 (Constant Rule)</p>
+<p>d/dx[x^n] = n·x^(n-1) (Power Rule)</p>
+<p>d/dx[c·f(x)] = c·f'(x) (Constant Multiple Rule)</p>
+<p>d/dx[f(x) + g(x)] = f'(x) + g'(x) (Sum Rule)</p>
+<p>d/dx[f(x)·g(x)] = f'(x)·g(x) + f(x)·g'(x) (Product Rule)</p>
+<p>d/dx[f(x)/g(x)] = [f'(x)·g(x) - f(x)·g'(x)]/[g(x)]² (Quotient Rule)</p>
+<p>d/dx[f(g(x))] = f'(g(x))·g'(x) (Chain Rule)</p>
+<p>d/dx[e^x] = e^x (Exponential Derivative)</p>
+<p>d/dx[a^x] = a^x·ln(a) (General Exponential Derivative)</p>
+<p>d/dx[ln(x)] = 1/x (Natural Logarithm Derivative)</p>
+<p>d/dx[sin(x)] = cos(x) (Sine Derivative)</p>
+<p>d/dx[cos(x)] = -sin(x) (Cosine Derivative)</p>
+<p>d/dx[tan(x)] = sec²(x) (Tangent Derivative)</p>
+<p>d/dx[arcsin(x)] = 1/√(1-x²) (Arcsine Derivative)</p>
+<p>d/dx[arctan(x)] = 1/(1+x²) (Arctangent Derivative)</p>
+<p>(f⁻¹)'(x) = 1/f'(f⁻¹(x)) (Inverse Function Theorem)</p>
+
+<h3>Mean Value Theorems</h3>
+<p>If f is continuous on [a,b], differentiable on (a,b), and f(a) = f(b), then f'(c) = 0 for some c in (a,b) (Rolle's Theorem)</p>
+<p>If f is continuous on [a,b] and differentiable on (a,b), then f'(c) = [f(b) - f(a)]/(b - a) for some c in (a,b) (Mean Value Theorem)</p>
+<p>If lim(x→a) f(x)/g(x) is 0/0 or ∞/∞, then lim(x→a) f(x)/g(x) = lim(x→a) f'(x)/g'(x) (L'Hôpital's Rule)</p>
+
+<h3>Integrals - Fundamental Theorems</h3>
+<p>d/dx[∫ₐˣ f(t)dt] = f(x) (Fundamental Theorem of Calculus, Part 1)</p>
+<p>∫ₐᵇ f(x)dx = F(b) - F(a) where F'(x) = f(x) (Fundamental Theorem of Calculus, Part 2)</p>
+<p>∫[f(x) + g(x)]dx = ∫f(x)dx + ∫g(x)dx (Sum Rule for Integrals)</p>
+<p>∫c·f(x)dx = c·∫f(x)dx (Constant Multiple Rule for Integrals)</p>
+<p>∫f(g(x))·g'(x)dx = ∫f(u)du where u = g(x) (Integration by Substitution)</p>
+<p>∫u dv = uv - ∫v du (Integration by Parts)</p>
+
+<h3>Standard Integrals</h3>
+<p>∫x^n dx = x^(n+1)/(n+1) + C, n ≠ -1 (Power Rule for Integration)</p>
+<p>∫(1/x)dx = ln|x| + C (Logarithmic Integration)</p>
+<p>∫e^x dx = e^x + C (Exponential Integration)</p>
+<p>∫a^x dx = a^x/ln(a) + C (General Exponential Integration)</p>
+<p>∫sin(x)dx = -cos(x) + C (Sine Integration)</p>
+<p>∫cos(x)dx = sin(x) + C (Cosine Integration)</p>
+<p>∫sec²(x)dx = tan(x) + C (Secant Squared Integration)</p>
+<p>∫tan(x)dx = -ln|cos(x)| + C (Tangent Integration)</p>
+<p>∫sec(x)dx = ln|sec(x) + tan(x)| + C (Secant Integration)</p>
+<p>∫1/√(1-x²) dx = arcsin(x) + C (Arcsine Integration)</p>
+<p>∫1/(1+x²) dx = arctan(x) + C (Arctangent Integration)</p>
+<p>∫ln(x)dx = x·ln(x) - x + C (Logarithm Integration)</p>
+
+<h3>Series</h3>
+<p>∑(n=0 to ∞) ar^n = a/(1-r), for |r| < 1 (Geometric Series)</p>
+<p>f(x) = ∑(n=0 to ∞) [f^(n)(a)/n!]·(x-a)^n (Taylor Series)</p>
+<p>f(x) = ∑(n=0 to ∞) [f^(n)(0)/n!]·x^n (Maclaurin Series)</p>
+<p>e^x = ∑(n=0 to ∞) x^n/n! = 1 + x + x²/2! + x³/3! + ... (Exponential Series)</p>
+<p>sin(x) = ∑(n=0 to ∞) (-1)^n·x^(2n+1)/(2n+1)! = x - x³/3! + x⁵/5! - ... (Sine Series)</p>
+<p>cos(x) = ∑(n=0 to ∞) (-1)^n·x^(2n)/(2n)! = 1 - x²/2! + x⁴/4! - ... (Cosine Series)</p>
+<p>ln(1+x) = ∑(n=1 to ∞) (-1)^(n+1)·x^n/n = x - x²/2 + x³/3 - ..., |x| < 1 (Logarithmic Series)</p>
+
+<h2>DIFFERENTIAL EQUATIONS & DYNAMICS</h2>
+
+<h3>First-Order Ordinary Differential Equations (ODEs)</h3>
+<p>dy/dx = f(x, y) (General First-Order ODE)</p>
+<p>g(x)dx = h(y)dy (Separable Equation)</p>
+<p>∫g(x)dx = ∫h(y)dy + C (Solution for Separable Equation)</p>
+<p>y' + p(x)y = q(x) (Linear First-Order ODE)</p>
+<p>μ(x) = exp(∫p(x)dx) (Integrating Factor)</p>
+<p>y = (1/μ(x)) * [∫μ(x)q(x)dx + C] (Solution via Integrating Factor)</p>
+<p>M(x, y)dx + N(x, y)dy = 0 (Exact Equation)</p>
+<p>∂M/∂y = ∂N/∂x (Test for Exactness)</p>
+<p>y' + p(x)y = q(x)y^n (Bernoulli Equation)</p>
+<p>v = y^(1-n) (Bernoulli Substitution)</p>
+<p>y' = F(y/x) (Homogeneous (Degree) Equation)</p>
+<p>v = y/x (Homogeneous (Degree) Substitution)</p>
+
+<h3>Second-Order Linear ODEs</h3>
+<p>a(x)y'' + b(x)y' + c(x)y = g(x) (General Linear Second-Order ODE)</p>
+<p>y = y_c + y_p (General Solution Structure, Non-homogeneous)</p>
+<p>y_c = C1*y1 + C2*y2 (Principle of Superposition, Homogeneous)</p>
+<p>ay'' + by' + cy = 0 (Homogeneous with Constant Coefficients)</p>
+<p>ar^2 + br + c = 0 (Characteristic Equation)</p>
+<p>y_c = C1*exp(r1*x) + C2*exp(r2*x) (Solution for Distinct Real Roots)</p>
+<p>y_c = (C1 + C2*x)*exp(r*x) (Solution for Repeated Real Roots)</p>
+<p>y_c = exp(αx)*(C1*cos(βx) + C2*sin(βx)) (Solution for Complex Roots r = α ± iβ)</p>
+<p>W(y1, y2) = y1*y2' - y1'*y2 (Wronskian)</p>
+<p>W(x) = C*exp(-∫p(x)dx) (Abel's Theorem)</p>
+<p>yp(x) = -y1∫(y2*g/W)dx + y2∫(y1*g/W)dx (Variation of Parameters)</p>
+<p>ax^2*y'' + bxy' + cy = 0 (Cauchy-Euler Equation)</p>
+<p>ar^2 + (b-a)r + c = 0 (Cauchy-Euler Characteristic Equation)</p>
+<p>mx'' + cx' + kx = F(t) (Forced Damped Oscillator)</p>
+
+<h3>Laplace Transforms</h3>
+<p>L{f(t)} = F(s) = ∫[0, ∞] exp(-st)f(t)dt (Definition of Laplace Transform)</p>
+<p>L{f'(t)} = sF(s) - f(0) (Laplace Transform of First Derivative)</p>
+<p>L{f''(t)} = s^2*F(s) - s*f(0) - f'(0) (Laplace Transform of Second Derivative)</p>
+<p>L{exp(at)f(t)} = F(s-a) (First Shifting Theorem)</p>
+<p>L{u_c(t)f(t-c)} = exp(-cs)F(s) (Second Shifting Theorem)</p>
+<p>L{(f * g)(t)} = F(s)G(s) (Convolution Theorem)</p>
+<p>(f * g)(t) = ∫[0, t] f(τ)g(t-τ)dτ (Definition of Convolution)</p>
+<p>L{δ(t-c)} = exp(-cs) (Laplace Transform of Dirac Delta)</p>
+
+<h3>Systems of ODEs & Stability</h3>
+<p>**x**' = A**x** (Homogeneous Linear System)</p>
+<p>det(A - λI) = 0 (System Characteristic Equation)</p>
+<p>**x**(t) = C1*exp(λ1*t)**v1** + C2*exp(λ2*t)**v2** (Solution, Distinct Eigenvalues)</p>
+<p>**x**(t) = exp(At)**x**(0) (Matrix Exponential Solution)</p>
+<p>exp(At) = I + At + (At)^2/2! + ... (Definition of Matrix Exponential)</p>
+<p>J(x, y) = [[∂P/∂x, ∂P/∂y], [∂Q/∂x, ∂Q/∂y]] (Jacobian Matrix for x' = P, y' = Q)</p>
+<p>tr(J) < 0, det(J) > 0 (Asymptotic Stability at Critical Point)</p>
+<p>V(x) > 0 for x ≠ 0 and dV/dt ≤ 0 (Lyapunov Stability Criteria)</p>
+
+<h3>Nonlinear Dynamics & Chaos</h3>
+<p>A closed trajectory in R² must enclose a critical point. (Poincaré-Bendixson Theorem)</p>
+<p>x' = μ - x^2 (Saddle-Node Bifurcation Normal Form)</p>
+<p>x' = μx - x^3 (Pitchfork Bifurcation Normal Form)</p>
+<p>x_(n+1) = f(x_n) (Discrete Dynamical System / Map)</p>
+<p>x_(n+1) = r * x_n * (1 - x_n) (Logistic Map)</p>
+<p>δ = (r_n - r_(n-1)) / (r_(n+1) - r_n) ≈ 4.669... (Feigenbaum Constant)</p>
+<p>x' = σ(y - x), y' = x(ρ - z) - y, z' = xy - βz (Lorenz Equations)</p>
+
+<h3>Partial Differential Equations (PDEs) & Fourier Series</h3>
+<p>∂u/∂t = k * ∂²u/∂x² (1D Heat Equation)</p>
+<p>∂²u/∂t² = c² * ∂²u/∂x² (1D Wave Equation)</p>
+<p>∇²u = ∂²u/∂x² + ∂²u/∂y² = 0 (2D Laplace's Equation)</p>
+<p>u(x,t) = X(x)T(t) (Separation of Variables Ansatz)</p>
+<p>f(x) = a0/2 + Σ[n=1, ∞](an*cos(nπx/L) + bn*sin(nπx/L)) (Fourier Series)</p>
+<p>an = (1/L) ∫[-L, L] f(x)cos(nπx/L)dx (Fourier Cosine Coefficient)</p>
+<p>bn = (1/L) ∫[-L, L] f(x)sin(nπx/L)dx (Fourier Sine Coefficient)</p>
 
 
-<hr>
 
-<b>Logic</b>
-  <br>
-<b>Number Theory</b>
-  <br>
-<b>Algebra</b>
-  <br>
-<b>Analysis & Calculus</b>
-  <br>
-<b>Geometry</b>
-  <br>
-<b>Combinatorics</b>
-  <br>
-<b>Topology</b>
-  <br>
-<b>Probability & Statistics</b>
-  <br>
-<b>Differential Equations & Dynamics</b>
-  <br>
-<b>Category Theory</b>
+<h2>VECTOR ALGEBRA</h2>
 
-<br>
-<br>
-<br>
+<h3>Basic Vector Operations</h3>
+<p>a + b = b + a (Commutative Law for Vector Addition)</p>
+<p>(a + b) + c = a + (b + c) (Associative Law for Vector Addition)</p>
+<p>a + 0 = a (Identity Law for Vector Addition)</p>
+<p>a + (-a) = 0 (Inverse Law for Vector Addition)</p>
+<p>k(a + b) = ka + kb (Distributive Law for Scalar Multiplication)</p>
+<p>(k + m)a = ka + ma (Distributive Law for Scalar Multiplication)</p>
+<p>k(ma) = (km)a (Associative Law for Scalar Multiplication)</p>
+<p>1·a = a (Identity Law for Scalar Multiplication)</p>
 
-<hr>
+<h3>Magnitude and Unit Vectors</h3>
+<p>|a| = √(a₁² + a₂² + ... + aₙ²) (Euclidean Norm)</p>
+<p>|ka| = |k|·|a| (Scalar Multiplication of Magnitude)</p>
+<p>â = a/|a| (Unit Vector)</p>
+<p>|a| = 0 ⟺ a = 0 (Zero Vector Property)</p>
 
-<hr>
+<h3>Dot Product</h3>
+<p>a · b = |a||b|cos(θ) (Geometric Definition of Dot Product)</p>
+<p>a · b = a₁b₁ + a₂b₂ + ... + aₙbₙ (Component Form of Dot Product)</p>
+<p>a · b = b · a (Commutative Law for Dot Product)</p>
+<p>a · (b + c) = a · b + a · c (Distributive Law for Dot Product)</p>
+<p>k(a · b) = (ka) · b = a · (kb) (Scalar Multiplication in Dot Product)</p>
+<p>a · a = |a|² (Dot Product with Self)</p>
+<p>a · b = 0 ⟺ a ⊥ b (Orthogonality Condition)</p>
+<p>|a · b| ≤ |a||b| (Cauchy-Schwarz Inequality)</p>
+<p>proj_b(a) = (a · b/|b|²)b (Vector Projection)</p>
+<p>comp_b(a) = a · b/|b| (Scalar Component)</p>
 
-<div class="banner">
-  <span class="bottommenu">
-    
-  </span>
-  <span class="bottommenu">
-    JOSH FLYNN
-    <br>
-    lexigenics "at" gmail "dot" com
-  </span>
-  <span class="bottommenu">
-    
-  </span>
-</div>
+<h3>Cross Product (3D)</h3>
+<p>a × b = |a||b|sin(θ)n̂ (Geometric Definition of Cross Product)</p>
+<p>a × b = (a₂b₃ - a₃b₂, a₃b₁ - a₁b₃, a₁b₂ - a₂b₁) (Component Form of Cross Product)</p>
+<p>a × b = -b × a (Anti-commutative Law for Cross Product)</p>
+<p>a × (b + c) = a × b + a × c (Distributive Law for Cross Product)</p>
+<p>k(a × b) = (ka) × b = a × (kb) (Scalar Multiplication in Cross Product)</p>
+<p>a × a = 0 (Cross Product with Self)</p>
+<p>a × b = 0 ⟺ a ∥ b (Parallel Vector Condition)</p>
+<p>|a × b| = |a||b|sin(θ) (Magnitude of Cross Product)</p>
+<p>(a × b) · a = 0, (a × b) · b = 0 (Cross Product Orthogonality)</p>
+<p>a × (b × c) = (a · c)b - (a · b)c (Vector Triple Product)</p>
+<p>a · (b × c) = b · (c × a) = c · (a × b) (Scalar Triple Product)</p>
+<p>|a · (b × c)| = Volume of parallelepiped (Geometric Interpretation of Scalar Triple Product)</p>
 
-<hr>
+<h3>Triangle and Parallelogram identities</h3>
+<p>|a + b|² = |a|² + 2(a · b) + |b|² (Expansion of Sum)</p>
+<p>|a - b|² = |a|² - 2(a · b) + |b|² (Expansion of Difference)</p>
+<p>|a + b|² + |a - b|² = 2(|a|² + |b|²) (Parallelogram Law)</p>
+<p>a · b = (|a + b|² - |a - b|²)/4 (Polarization Identity)</p>
 
-<!--
+<h3>Vector Calculus</h3>
+<p>d/dt[r(t)] = r'(t) = (dx/dt, dy/dt, dz/dt) (Vector Derivative)</p>
+<p>d/dt[u(t) + v(t)] = u'(t) + v'(t) (Sum Rule for Vectors)</p>
+<p>d/dt[f(t)u(t)] = f'(t)u(t) + f(t)u'(t) (Scalar Product Rule)</p>
+<p>d/dt[u(t) · v(t)] = u'(t) · v(t) + u(t) · v'(t) (Dot Product Rule)</p>
+<p>d/dt[u(t) × v(t)] = u'(t) × v(t) + u(t) × v'(t) (Cross Product Rule)</p>
+<p>|r'(t)| = ds/dt (Speed as Derivative of Arc Length)</p>
+<p>T(t) = r'(t)/|r'(t)| (Unit Tangent Vector)</p>
+<p>N(t) = T'(t)/|T'(t)| (Unit Normal Vector)</p>
+<p>κ = |T'(t)|/|r'(t)| = |r'(t) × r''(t)|/|r'(t)|³ (Curvature)</p>
+<p>B(t) = T(t) × N(t) (Unit Binormal Vector)</p>
 
-<div class="banner bottomdownload">
-  <span class="downloadmenu">
-    <span><a href="../spPDF" title="Get this site as a pdf"><img src="../icons/PDFicon.svg" alt="PDF icon" class="icons"/></a>
+<h3>Gradient, Divergence, and Curl</h3>
+<p>∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z) (Gradient)</p>
+<p>∇ · F = ∂F₁/∂x + ∂F₂/∂y + ∂F₃/∂z (Divergence)</p>
+<p>∇ × F = (∂F₃/∂y - ∂F₂/∂z, ∂F₁/∂z - ∂F₃/∂x, ∂F₂/∂x - ∂F₁/∂y) (Curl)</p>
+<p>∇ × (∇f) = 0 (Curl of Gradient is Zero)</p>
+<p>∇ · (∇ × F) = 0 (Divergence of Curl is Zero)</p>
+<p>∇²f = ∇ · ∇f = ∂²f/∂x² + ∂²f/∂y² + ∂²f/∂z² (Laplacian)</p>
 
-    </span>
-  </span>
-  <span class="downloadmenu">
-    <span><a href="../spTXT" title="Get this site as plain text"><img src="../icons/TXTicon.svg" alt="TXT icon" class="icons"/></a>
+<h2>LINEAR ALGEBRA</h2>
 
-    </span>
-  </span>
-</div>
+<h3>Vector Space Axioms</h3>
+<p>u + v = v + u (Commutativity of Vector Addition)</p>
+<p>(u + v) + w = u + (v + w) (Associativity of Vector Addition)</p>
+<p>u + 0 = u (Additive Identity)</p>
+<p>u + (-u) = 0 (Additive Inverse)</p>
+<p>c(u + v) = cu + cv (Distributive Law)</p>
+<p>(c + d)u = cu + du (Distributive Law)</p>
+<p>c(du) = (cd)u (Associativity of Scalar Multiplication)</p>
+<p>1u = u (Scalar Identity)</p>
 
--->
+<h3>Inner Products, Norms, & Geometry</h3>
+<p>⟨u, v⟩ = ⟨v, u⟩ (Symmetry of Real Inner Product)</p>
+<p>⟨u + v, w⟩ = ⟨u, w⟩ + ⟨v, w⟩ (Additivity of Inner Product)</p>
+<p>⟨cu, v⟩ = c⟨u, v⟩ (Homogeneity of Inner Product)</p>
+<p>⟨v, v⟩ ≥ 0, and ⟨v, v⟩ = 0 ⇔ v = 0 (Positive-Definiteness)</p>
+<p>||v|| = sqrt(⟨v, v⟩) (Norm from Inner Product)</p>
+<p>|⟨u, v⟩| ≤ ||u|| ||v|| (Cauchy-Schwarz Inequality)</p>
+<p>||u + v|| ≤ ||u|| + ||v|| (Triangle Inequality)</p>
+<p>d(u, v) = ||u - v|| (Distance Formula)</p>
+<p>u . v = u1*v1 + ... + un*vn (Standard Dot Product)</p>
+<p>u . v = ||u|| * ||v|| * cos(θ) (Geometric Definition of Dot Product)</p>
+<p>u . v = 0 ⇔ u ⊥ v (Orthogonality Condition)</p>
+<p>proj_u(v) = (⟨v, u⟩ / ⟨u, u⟩) * u (Orthogonal Projection)</p>
+<p>u x v = (u2*v3 - u3*v2, u3*v1 - u1*v3, u1*v2 - u2*v1) (Cross Product in R^3)</p>
+<p>u . (v x w) = det([u v w]) (Scalar Triple Product)</p>
 
-<hr>
+<h3>Matrix Algebra</h3>
+<p>(A*B)ij = Σ(k) Aik * Bkj (Definition of Matrix Multiplication)</p>
+<p>A + B = B + A (Commutativity of Matrix Addition)</p>
+<p>A(BC) = (AB)C (Associativity of Matrix Multiplication)</p>
+<p>A(B + C) = AB + AC (Left Distributive Law)</p>
+<p>(A + B)C = AC + BC (Right Distributive Law)</p>
+<p>A*I = I*A = A (Multiplicative Identity)</p>
+<p>(A^T)ij = Aji (Definition of Transpose)</p>
+<p>(A + B)^T = A^T + B^T (Transpose of a Sum)</p>
+<p>(A*B)^T = B^T * A^T (Transpose of a Product)</p>
+<p>tr(A) = Σ(i) Aii (Definition of Trace)</p>
+<p>tr(A + B) = tr(A) + tr(B) (Trace Linearity)</p>
+<p>tr(A*B) = tr(B*A) (Cyclic Property of Trace)</p>
 
-<br>
+<h3>Determinants & Inverses</h3>
+<p>det(A) = Σ(j) (-1)^(i+j) * Aij * Mij (Laplace/Cofactor Expansion)</p>
+<p>det(A*B) = det(A) * det(B) (Multiplicative Property)</p>
+<p>det(A^T) = det(A) (Determinant of Transpose)</p>
+<p>det(kA) = k^n * det(A) (Determinant of Scalar Multiple, A is n x n)</p>
+<p>det(I) = 1 (Determinant of Identity)</p>
+<p>A is invertible ⇔ det(A) ≠ 0 (Invertibility Condition)</p>
+<p>A * A^(-1) = A^(-1) * A = I (Definition of Matrix Inverse)</p>
+<p>det(A^(-1)) = 1 / det(A) (Determinant of Inverse)</p>
+<p>(A*B)^(-1) = B^(-1) * A^(-1) (Inverse of a Product)</p>
+<p>(A^T)^(-1) = (A^(-1))^T (Inverse of a Transpose)</p>
 
-</div>
+<h3>Linear Systems, Subspaces & Rank</h3>
+<p>A*x = b (General Linear System)</p>
+<p>A*x = b has solution ⇔ rank(A) = rank([A|b]) (Rouché-Capelli Theorem)</p>
+<p>Null(A) = {x | A*x = 0} (Definition of Null Space / Kernel)</p>
+<p>Col(A) = {A*x | x in R^n} (Definition of Column Space / Image)</p>
+<p>rank(A) = dim(Col(A)) (Definition of Rank)</p>
+<p>nullity(A) = dim(Null(A)) (Definition of Nullity)</p>
+<p>rank(A) + nullity(A) = n (Rank-Nullity Theorem, A is m x n)</p>
+<p>rank(A) = rank(A^T) (Rank Equality)</p>
+<p>Col(A) ⊥ Null(A^T) (Fundamental Subspace Orthogonality)</p>
+<p>Row(A) ⊥ Null(A) (Fundamental Subspace Orthogonality)</p>
+
+<h3>Linear Transformations</h3>
+<p>T(u + v) = T(u) + T(v) (Additivity)</p>
+<p>T(cu) = cT(u) (Homogeneity)</p>
+<p>T(x) = A*x (Matrix Representation)</p>
+<p>dim(Ker(T)) + dim(Im(T)) = dim(V) (Rank-Nullity Theorem for Transformations)</p>
+<p>[x]_C = P_C<-B * [x]_B (Change of Basis Formula)</p>
+
+<h3>Eigenvalues & Eigenvectors</h3>
+<p>A*v = λ*v (Eigenvalue-Eigenvector Equation)</p>
+<p>det(A - λ*I) = 0 (Characteristic Equation)</p>
+<p>E_λ = Null(A - λ*I) (Eigenspace for λ)</p>
+<p>tr(A) = Σ(i) λi (Trace as Sum of Eigenvalues)</p>
+<p>det(A) = Π(i) λi (Determinant as Product of Eigenvalues)</p>
+<p>A = P*D*P^(-1) (Diagonalization)</p>
+<p>p(A) = 0 (Cayley-Hamilton Theorem)</p>
+
+<h3>Decompositions & Spectral Theory</h3>
+<p>Q^T * Q = Q * Q^T = I (Orthogonal Matrix Definition)</p>
+<p>A^T * A * x_hat = A^T * b (Normal Equation for Least Squares)</p>
+<p>A = Q*Λ*Q^T (Spectral Theorem for Real Symmetric Matrices)</p>
+<p>A = L*U (LU Decomposition)</p>
+<p>A = Q*R (QR Decomposition)</p>
+<p>A = U*Σ*V^T (Singular Value Decomposition - SVD)</p>
+
+<h2>ABSTRACT ALGEBRA</h2>
+
+<h3>Core Algebraic Structures</h3>
+<p>(G, *) is a Group (Associativity, ∃e Identity, ∃a⁻¹ Inverse)</p>
+<p>a * b = b * a (Commutative Law / Abelian Group)</p>
+<p>(R, +, *) is a Ring ((R, +) is Abelian Group, (R, \*) is Associative)</p>
+<p>a*(b + c) = a*b + a*c and (a + b)*c = a*c + b*c (Distributive Laws)</p>
+<p>a * b = 0 ⇒ a = 0 or b = 0 (Integral Domain Property)</p>
+<p>(F, +, *) is a Field (Commutative Ring where U(F) = F \\ {0})</p>
+<p>U(R) = { u ∈ R | ∃u⁻¹ } (Group of Units of a Ring)</p>
+
+<h3>Group Theory</h3>
+<p>(a * b)⁻¹ = b⁻¹ * a⁻¹ (Inverse of a Product / Socks-Shoes Property)</p>
+<p>a * b = a * c ⇒ b = c (Left Cancellation Law)</p>
+<p>H ≤ G if a * b⁻¹ ∈ H for all a, b ∈ H (One-Step Subgroup Test)</p>
+<p><a> = { aⁿ | n ∈ ℤ } (Cyclic Subgroup generated by a)</p>
+<p>ord(a) = |<a>| (Order of an Element)</p>
+<p>aH = { ah | h ∈ H } (Left Coset of H)</p>
+<p>|G| = |H| * |G:H| (Lagrange's Theorem)</p>
+<p>|G:H| = |G| / |H| (Index of a Subgroup)</p>
+<p>ord(a) divides |G| (Corollary to Lagrange's Theorem)</p>
+<p>a^|G| = e (Fermat's Little Theorem for Groups)</p>
+<p>|G| = p (prime) ⇒ G ≅ ℤ\_p (Groups of Prime Order)</p>
+<p>ℤ\_m × ℤ\_n ≅ ℤ\_(mn) if gcd(m, n) = 1 (Chinese Remainder Theorem for Groups)</p>
+<p>N ◁ G if g * n * g⁻¹ ∈ N for all g ∈ G, n ∈ N (Normal Subgroup)</p>
+<p>gN = Ng for all g ∈ G (Left Cosets equal Right Cosets)</p>
+<p>G/N = { gN | g ∈ G } (Quotient Group / Factor Group)</p>
+<p>(aN) * (bN) = (ab)N (Operation in G/N)</p>
+<p>φ(a * b) = φ(a) * φ(b) (Group Homomorphism)</p>
+<p>Ker(φ) = { g ∈ G | φ(g) = e\_H } (Kernel of Homomorphism)</p>
+<p>Im(φ) = { φ(g) | g ∈ G } (Image of Homomorphism)</p>
+<p>G / Ker(φ) ≅ Im(φ) (First Isomorphism Theorem for Groups)</p>
+<p>(H * N) / N ≅ H / (H ∩ N) (Second Isomorphism Theorem for Groups)</p>
+<p>(G / N) / (H / N) ≅ G / H (Third Isomorphism Theorem for Groups)</p>
+<p>Z(G) = { g ∈ G | g*x = x*g for all x ∈ G } (Center of a Group)</p>
+<p>g ⋅ x (Group Action of G on X)</p>
+<p>Orb(x) = { g ⋅ x | g ∈ G } (Orbit of x)</p>
+<p>Stab(x) = { g ∈ G | g ⋅ x = x } (Stabilizer of x)</p>
+<p>|G| = |Orb(x)| * |Stab(x)| (Orbit-Stabilizer Theorem)</p>
+<p>|G| = |Z(G)| + Σ |G:C(a)| (Class Equation)</p>
+<p>∃H ≤ G with |H| = p^k where |G| = p^k * m (Sylow's First Theorem)</p>
+<p>All Sylow p-subgroups are conjugate (Sylow's Second Theorem)</p>
+<p>n\_p ≡ 1 (mod p) and n\_p divides m (Sylow's Third Theorem)</p>
+<p>G ≅ ℤ\_p₁^k₁ × ℤ\_p₂^k₂ × ... (Fundamental Theorem of Finite Abelian Groups)</p>
+
+<h3>Ring Theory</h3>
+<p>I ◁ R (Ideal Definition: (I, +) ≤ (R, +) and r*x, x*r ∈ I)</p>
+<p>R/I = { r + I | r ∈ R } (Quotient Ring / Factor Ring)</p>
+<p>(a + I)(b + I) = (a*b) + I (Multiplication in R/I)</p>
+<p>φ(a + b) = φ(a) + φ(b) and φ(a * b) = φ(a) * φ(b) (Ring Homomorphism)</p>
+<p>R / Ker(φ) ≅ Im(φ) (First Isomorphism Theorem for Rings)</p>
+<p>I is Prime ⇔ R/I is an Integral Domain (Prime Ideal Property)</p>
+<p>I is Maximal ⇔ R/I is a Field (Maximal Ideal Property)</p>
+<p>R is a PID if every ideal is principal (Principal Ideal Domain)</p>
+<p>R is a UFD if factorization is unique (Unique Factorization Domain)</p>
+<p>R is PID ⇒ R is UFD (PID implies UFD)</p>
+<p>gcd(a, b) = sa + tb (Bézout's Identity)</p>
+
+
+
+<h2>COMBINATORICS</h2>
+
+<h3>Fundamental Counting Principles</h3>
+<p>|A ∪ B| = |A| + |B| (Rule of Sum for disjoint sets)</p>
+<p>|A × B| = |A| ⋅ |B| (Rule of Product)</p>
+
+<h3>Permutations & Combinations</h3>
+<p>n! = n ⋅ (n-1) ⋅ ... ⋅ 2 ⋅ 1 (Factorial)</p>
+<p>0! = 1 (Definition of Zero Factorial)</p>
+<p>P(n, k) = n! / (n-k)! (k-Permutations of n / Partial Permutation)</p>
+<p>C(n, k) = n! / (k! ⋅ (n-k)!) (Combinations / Binomial Coefficient)</p>
+<p>n^k (Permutations with Replacement / k-Tuples)</p>
+<p>C(n+k-1, k) = C(n+k-1, n-1) (Combinations with Replacement / Stars and Bars)</p>
+<p>(n! / (k_1! ⋅ k_2! ⋅ ... ⋅ k_m!)) (Permutations with Repetition / Multinomial Coefficient)</p>
+
+<h3>Binomial & Multinomial Identities</h3>
+<p>C(n, k) = C(n, n-k) (Symmetry Identity)</p>
+<p>C(n, k) = C(n-1, k-1) + C(n-1, k) (Pascal's Identity)</p>
+<p>(x + y)^n = Σ_{k=0 to n} C(n, k) ⋅ x^(n-k) ⋅ y^k (Binomial Theorem)</p>
+<p>Σ_{k=0 to n} C(n, k) = 2^n (Sum of Binomial Coefficients / Row Sum of Pascal's Triangle)</p>
+<p>Σ_{k=0 to n} (-1)^k ⋅ C(n, k) = 0 (Alternating Sum of Binomial Coefficients)</p>
+<p>Σ_{k=0 to r} C(m, k) ⋅ C(n, r-k) = C(m+n, r) (Vandermonde's Identity)</p>
+<p>Σ_{k=0 to n} C(n, k)^2 = C(2n, n) (Central Binomial Coefficient Identity)</p>
+<p>Σ_{i=k to n} C(i, k) = C(n+1, k+1) (Hockey-Stick Identity / Christmas Stocking Theorem)</p>
+<p>k ⋅ C(n, k) = n ⋅ C(n-1, k-1) (Absorption Identity)</p>
+<p>(x_1 + ... + x_m)^n = Σ_{k_1+...+k_m=n} (n! / (k_1! ⋅ ... ⋅ k_m!)) ⋅ x_1^{k_1} ⋅ ... ⋅ x_m^{k_m} (Multinomial Theorem)</p>
+
+<h3>Inclusion-Exclusion, Derangements & Pigeonhole Principle</h3>
+<p>|A ∪ B| = |A| + |B| - |A ∩ B| (Inclusion-Exclusion for 2 sets)</p>
+<p>|∪_{i=1 to n} A_i| = Σ|A_i| - Σ_{i<j}|A_i ∩ A_j| + ... + (-1)^{n-1} |A_1 ∩ ... ∩ A_n| (Principle of Inclusion-Exclusion)</p>
+<p>D_n = n! ⋅ Σ_{k=0 to n} ((-1)^k / k!) (Derangements / Subfactorial)</p>
+<p>D_n = (n-1) ⋅ (D_{n-1} + D_{n-2}) (Derangement Recurrence)</p>
+<p>D_n ≈ n! / e (Derangement Approximation)</p>
+<p>If n objects are in m boxes, at least one box contains ⌈n/m⌉ objects. (Pigeonhole Principle)</p>
+
+<h3>Recurrence Relations & Special Numbers</h3>
+<p>F_n = F_{n-1} + F_{n-2} with F_0 = 0, F_1 = 1 (Fibonacci Numbers - Recurrence)</p>
+<p>F_n = (φ^n - ψ^n) / sqrt(5) where φ = (1+sqrt(5))/2, ψ = (1-sqrt(5))/2 (Binet's Formula)</p>
+<p>gcd(F_m, F_n) = F_{gcd(m,n)} (Fibonacci GCD Property)</p>
+<p>C_n = (1 / (n+1)) ⋅ C(2n, n) (Catalan Numbers - Closed Form)</p>
+<p>C_n = Σ_{i=0 to n-1} C_i ⋅ C_{n-1-i} (Catalan Numbers - Recurrence)</p>
+<p>C_n = C(2n, n) - C(2n, n-1) (Catalan Numbers - Alternative Form)</p>
+<p>S(n, k) = S(n-1, k-1) + k ⋅ S(n-1, k) (Stirling Numbers of the Second Kind - Recurrence)</p>
+<p>s(n, k) = s(n-1, k-1) - (n-1) ⋅ s(n-1, k) (Stirling Numbers of the First Kind - Recurrence)</p>
+<p>x^n = Σ_{k=0 to n} S(n, k) ⋅ x(x-1)...(x-k+1) (Power to Falling Factorial)</p>
+<p>x(x-1)...(x-n+1) = Σ_{k=0 to n} s(n, k) ⋅ x^k (Falling Factorial to Power)</p>
+<p>B_n = Σ_{k=0 to n} S(n, k) (Bell Numbers / Relation to Stirling Numbers)</p>
+<p>B_{n+1} = Σ_{k=0 to n} C(n, k) ⋅ B_k (Bell Numbers - Recurrence)</p>
+<p>p(n) = number of ways to write n as a sum of positive integers (Partition Function)</p>
+<p>p(n) = p(n-1) + p(n-2) - p(n-5) - p(n-7) + ... (Euler's Pentagonal Number Theorem)</p>
+
+<h3>Generating Functions</h3>
+<p>G(x) = Σ_{n=0 to ∞} a_n ⋅ x^n (Ordinary Generating Function - OGF)</p>
+<p>E(x) = Σ_{n=0 to ∞} a_n ⋅ (x^n / n!) (Exponential Generating Function - EGF)</p>
+<p>1 / (1 - x) = Σ_{n=0 to ∞} x^n (Geometric Series Generating Function)</p>
+<p>Σ_{n=0 to ∞} p(n)x^n = Π_{k=1 to ∞} (1 / (1 - x^k)) (Generating Function for Partitions)</p>
+
+<h3>Graph Theory & Enumeration</h3>
+<p>Σ_{v ∈ V} deg(v) = 2|E| (Handshaking Lemma / Degree Sum Formula)</p>
+<p>|V| - |E| + |F| = 2 (Euler's Formula for Planar Graphs)</p>
+<p>A tree with n vertices has n - 1 edges. (Property of Trees)</p>
+<p>n^(n-2) (Number of labeled trees on n vertices) (Cayley's Formula)</p>
+<p>det(L_reduced) (Number of spanning trees of a graph) (Matrix-Tree Theorem)</p>
+<p>|E| = n(n-1) / 2 (Number of Edges in Complete Graph K_n)</p>
+
+<h3>Ramsey Theory</h3>
+<p>R(r, s) ≤ C(r+s-2, r-1) (Ramsey Number Upper Bound)</p>
+
+<h2>PROBABILITY & STATISTICS</h2>
+
+<h3>Basic Probability Axioms & Rules</h3>
+<p>P(∅) = 0, P(S) = 1 (Probability Axioms)</p>
+<p>0 ≤ P(A) ≤ 1 (Nonnegativity / Bounds)</p>
+<p>P(Aᶜ) = 1 − P(A) (Complement Rule)</p>
+<p>P(A ∪ B) = P(A) + P(B) − P(A ∩ B) (Inclusion–Exclusion)</p>
+<p>If A ∩ B = ∅ then P(A ∪ B) = P(A) + P(B) (Finite Additivity / Disjoint)</p>
+<p>P(A | B) = P(A ∩ B) / P(B), P(B) > 0 (Conditional Probability)</p>
+<p>P(A ∩ B) = P(A | B) · P(B) (Multiplication Rule)</p>
+<p>P(A₁ ∩ … ∩ Aₙ) = Π_{i=1..n} P(Aᵢ | A₁ ∩ … ∩ A_{i−1}) (Chain Rule)</p>
+<p>If independent: P(A ∩ B) = P(A)·P(B) and more generally Π P(Aᵢ) (Independence)</p>
+<p>P(B) = Σ_i P(B | Aᵢ)·P(Aᵢ) over partition {Aᵢ} (Law of Total Probability)</p>
+<p>P(A | B) = P(B | A)·P(A) / P(B) (Bayes' Theorem)</p>
+
+<h3>Combinatorics</h3>
+<p>n! = n·(n−1)·…·1 ; C(n,k) = n!/(k!(n−k)!) (Factorial & Binomial Coefficient)</p>
+<p>P(n,k) = n!/(n−k)! (Permutations)</p>
+
+<h3>Random Variables & Distributions</h3>
+<p>F_X(x) = P(X ≤ x) (Cumulative Distribution Function, CDF)</p>
+<p>p_X(x) = P(X = x), Σ_x p_X(x) = 1 (Probability Mass Function, PMF)</p>
+<p>f_X(x) = dF_X(x)/dx (Probability Density Function, PDF)</p>
+<p>P(a < X ≤ b) = F_X(b) − F_X(a) (Interval Probability via CDF)</p>
+<p>f_{X,Y}(x,y) = joint pdf/pmf ; f_X(x) = ∫ f_{X,Y}(x,y) dy (Joint & Marginal)</p>
+<p>f_{X|Y}(x|y) = f_{X,Y}(x,y) / f_Y(y) (Conditional PDF / PMF)</p>
+
+<h3>Expectation, Variance & Covariance</h3>
+<p>E[X] = Σ x p(x) or ∫ x f(x) dx (Expectation / Mean)</p>
+<p>E[g(X)] = Σ g(x)p(x) or ∫ g(x)f(x) dx (Law of the Unconscious Statistician)</p>
+<p>E[aX + b] = a E[X] + b ; E[X + Y] = E[X] + E[Y] (Linearity of Expectation)</p>
+<p>Var(X) = E[(X − μ)^2] (Variance, definition)</p>
+<p>Var(X) = E[X^2] − (E[X])^2 (Computational Variance)</p>
+<p>Var(aX + b) = a^2 Var(X) ; Var(X + Y) = Var(X) + Var(Y) + 2 Cov(X,Y) (Variance Rules)</p>
+<p>Cov(X,Y) = E[(X − μ_X)(Y − μ_Y)] = E[XY] − E[X]E[Y] (Covariance)</p>
+<p>ρ(X,Y) = Cov(X,Y) / (σ_X σ_Y) (Pearson Correlation Coefficient)</p>
+
+<h3>Moment Generating Functions & Inequalities</h3>
+<p>M_X(t) = E[e^{tX}] (Moment Generating Function, MGF)</p>
+<p>M_{X+Y}(t) = M_X(t)·M_Y(t) if X and Y independent (MGF Product Property)</p>
+<p>Markov: P(X ≥ a) ≤ E[X]/a for X ≥ 0 (Markov's Inequality)</p>
+<p>Chebyshev: P(|X − μ| ≥ kσ) ≤ 1/k^2 (Chebyshev's Inequality)</p>
+
+<h3>Limit Theorems</h3>
+<p>Weak Law: X̄_n → μ in probability as n → ∞ (Weak Law of Large Numbers)</p>
+<p>Strong Law: X̄_n → μ almost surely as n → ∞ (Strong Law of Large Numbers)</p>
+<p>CLT: (Σ_{i=1..n} X_i − nμ) / (σ√n) → N(0,1) (Central Limit Theorem)</p>
+
+<h3>Common Distributions</h3>
+<p>Bernoulli(p): P(X=1)=p, P(X=0)=1−p ; E[X]=p, Var(X)=p(1−p) (Bernoulli)</p>
+<p>Binomial(n,p): P(X=k)=C(n,k)p^k(1−p)^{n−k} ; E=np, Var=np(1−p) (Binomial)</p>
+<p>Poisson(λ): P(X=k)=e^{−λ} λ^k / k! ; E=Var=λ (Poisson)</p>
+<p>Geometric(p): P(X=k)=(1−p)^{k−1} p, k=1,2,... ; E=1/p (Geometric)</p>
+<p>Negative Binomial(r,p): P(X=k)=C(k−1,r−1) p^r (1−p)^{k−r} (Negative Binomial)</p>
+<p>Uniform(a,b): f(x)=1/(b−a), a ≤ x ≤ b ; E=(a+b)/2, Var=(b−a)^2/12 (Continuous Uniform)</p>
+<p>Exponential(λ): f(x)=λ e^{−λ x}, x ≥ 0 ; E=1/λ, memoryless: P(X>s+t|X>s)=P(X>t) (Exponential)</p>
+<p>Normal(μ,σ^2): f(x)=(1/(σ√(2π))) e^{−(x−μ)^2/(2σ^2)} ; Z=(X−μ)/σ ~ N(0,1) (Normal / Gaussian)</p>
+<p>Sum of independent normals is normal (Normal closure property)</p>
+<p>χ^2_k distribution: sum of k independent Z_i^2 ; (n−1) s^2 / σ^2 ~ χ^2_{n−1} (Chi-Square)</p>
+<p>t_{ν} distribution: T = (X̄ − μ) / (s/√n) ∼ t_{n−1} (Student's t)</p>
+<p>F_{d1,d2} distribution: ratio of scaled chi-squares (F Distribution)</p>
+
+<h3>Sampling & Inference</h3>
+<p>Sample mean X̄ = (1/n) Σ X_i ; sample variance s^2 = (1/(n−1)) Σ (X_i − X̄)^2 (Sample Statistics)</p>
+<p>SE(X̄) = σ / √n ; estimated SE = s / √n (Standard Error of the Mean)</p>
+<p>Confidence Intervals: X̄ ± z_{α/2}·(σ/√n) (σ known) ; X̄ ± t_{α/2,n−1}·(s/√n) (σ unknown) (Confidence Intervals)</p>
+<p>Likelihood L(θ) = Π_i f(x_i; θ) ; θ̂_MLE = argmax_θ L(θ) ; Fisher Information I(θ) = −E[∂^2 log f/∂θ^2] ; Var(θ̂) ≥ 1/(n I(θ)) (Likelihood, MLE, Fisher Info, Cramér–Rao)</p>
 </body>
 </html>
