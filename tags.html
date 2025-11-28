@@ -10,6 +10,38 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .copy-btn {
+            padding: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: monospace;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+        .copy-btn:active {
+            background-color: #3d8b40;
+        }
+        .copy-btn.copied {
+            background-color: #2196F3;
+        }
         .content {
             white-space: pre-wrap;
             background-color: white;
@@ -22,18 +54,31 @@
     </style>
 </head>
 <body>
+    <div class="button-container">
+        <button class="copy-btn" onclick="copyToClipboard('poetry')">Poetry</button>
+        <button class="copy-btn" onclick="copyToClipboard('literature')">Literature</button>
+        <button class="copy-btn" onclick="copyToClipboard('piano')">Piano</button>
+        <button class="copy-btn" onclick="copyToClipboard('kalimba')">Kalimba</button>
+        <button class="copy-btn" onclick="copyToClipboard('drawingLeft')">Drawing (Left)</button>
+        <button class="copy-btn" onclick="copyToClipboard('drawingRight')">Drawing (Right)</button>
+        <button class="copy-btn" onclick="copyToClipboard('origami')">Origami</button>
+        <button class="copy-btn" onclick="copyToClipboard('maths')">Maths</button>
+        <button class="copy-btn" onclick="copyToClipboard('science')">Science</button>
+        <button class="copy-btn" onclick="copyToClipboard('language')">Language</button>
+    </div>
+
     <div class="content">Stand
-	Poetry
-	Literature
+    Poetry
+    Literature
 
 Top
-	Music
-	Drawing
+    Music
+    Drawing
 
 Laptop
-	Maths
-	Science
-	Language
+    Maths
+    Science
+    Language
 
 
 == POETRY ==
@@ -224,5 +269,187 @@ www.enterthegarden.org
 ##LanguageLearning #PolyglotJourney #Duolingo
 #StudyWithMe #LanguageChallenge #BeginnerPolyglot
 #DailyPractice #FailForward #SkillAcquisition</div>
+
+    <script>
+        const descriptions = {
+            poetry: `#Shorts #Poetry #BookTube #SpokenWord #ClassicPoetry
+#Recitation #PoetryReading #PoetryCommunity #Literature`,
+
+            literature: `Sharing my love of literature.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+#FullAudioBook #Audiobook #ClassicLiterature
+#Unabridged #SleepAudiobook #BookTube
+#EnglishLiterature #PublicDomain #ReadAloud
+#NoCommentary #ReadWithMe #StoryTime #DailyReading`,
+
+            piano: `Learning music nearly from scratch.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All music students, feel free to see me as your partner while you learn and pair up with me.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of instrument playing.
+
+#PianoJourney #AdultPianoBeginner #PracticeWithMe
+#LearnPianoFromScratch #RawPractice #SkillAcquisition
+#AITrainingData #DeliberatePractice #BeginnerPiano
+#PianoPractice #DailyPractice #MusicLearning`,
+
+            kalimba: `Learning music nearly from scratch.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All music students, feel free to see me as your partner while you learn and pair up with me.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of instrument playing.
+
+#KalimbaJourney #AdultKalimbaBeginner #PracticeWithMe
+#LearnKalimbaFromScratch #RawPractice #SkillAcquisition
+#AITrainingData #DeliberatePractice #BeginnerKalimba
+#KalimbaPractice #DailyPractice #MusicLearning`,
+
+            drawingLeft: `Learning to draw with my left hand (I'm naturally right-handed).
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All art students, feel free to see me as your partner while you learn and pair up with me.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of learning how to draw with the non-dominant hand.
+
+#LeftHandDrawing #BeginnerDrawing #LearnToDraw
+#DrawingPractice #ArtJourney #DailyArt
+#SkillAcquisition #AITrainingData
+#Ambidexterity #BrainTraining
+#DrawWithMe #SketchingDaily
+#AITrainingData #RawPractice`,
+
+            drawingRight: `Learning to draw from scratch.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All art students, feel free to see me as your partner while you learn and pair up with me.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of learning how to draw.
+
+#BeginnerDrawing #LearnToDraw
+#DrawingPractice #ArtJourney #DailyArt
+#SkillAcquisition #AITrainingData
+#Ambidexterity #BrainTraining
+#DrawWithMe #SketchingDaily
+#AITrainingData #RawPractice`,
+
+            origami: `Learning how to do origami.
+Might be doing so blind-folded for sharpening my senses.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All art students, feel free to see me as your partner while you learn and pair up with me.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of learning how to make origami.
+
+#Origami #PaperFolding #PaperCraft #Mindfulness #BlindfoldChallenge #SensoryTraining #HandEyeCoordination #MeditativeArt #PaperArt #SkillAcquisition #AITrainingData`,
+
+            maths: `Streaming computations and calculations.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All students, feel free to see me as your partner while you do your own homework.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of mathematics.
+
+#LinearAlgebra #Calculus
+#StudyWithMe #SelfStudyMath #OxfordMath
+#UndergraduateMath #MathJourney #StudyStream
+#STEMSkillAcquisition #OpenCourseWare #AITrainingData`,
+
+            science: `Streaming computations and calculations.
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+All students, feel free to see me as your partner while you do your own homework.
+
+All researchers, this video is unedited raw footage of adult skill acquisition. In this case, of the sciences.
+
+#Physics #Chemistry #Biology
+#StudyWithMe #OpenStax #PreMed
+#STEMStudy #ScienceJourney #ProblemSolving
+#ActiveRecall #CollegeScience #AITrainingData`,
+
+            language: `I've never been any good with learning languages.
+So, let's try it!
+Relax with me.
+
+You can speak in chat or contact me directly:
+lexigenics "at" gmail "dot" com
+
+Check out my site:
+www.enterthegarden.org
+
+##LanguageLearning #PolyglotJourney #Duolingo
+#StudyWithMe #LanguageChallenge #BeginnerPolyglot
+#DailyPractice #FailForward #SkillAcquisition`
+        };
+
+        function copyToClipboard(type) {
+            const text = descriptions[type];
+            const button = event.target;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                // Visual feedback
+                button.classList.add('copied');
+                const originalText = button.textContent;
+                button.textContent = '✓ Copied!';
+                
+                setTimeout(() => {
+                    button.classList.remove('copied');
+                    button.textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy: ' + err);
+            });
+        }
+    </script>
 </body>
 </html>
